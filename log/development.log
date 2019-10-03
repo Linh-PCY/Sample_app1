@@ -1,0 +1,3674 @@
+Started GET "/" for ::1 at 2019-09-26 09:01:45 +0700
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 28.2ms | Allocations: 483)
+Completed 200 OK in 81ms (Views: 44.5ms | ActiveRecord: 0.0ms | Allocations: 2745)
+
+
+Started GET "/sample_app" for ::1 at 2019-09-26 09:02:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/sample_app"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-26 09:03:09 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.2ms | Allocations: 195)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 860)
+
+
+Started GET "/" for ::1 at 2019-09-26 09:55:09 +0700
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 50ms (Views: 44.6ms | ActiveRecord: 0.0ms | Allocations: 1742)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-09-26 09:55:33 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.2ms | Allocations: 371)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/pham/Documents/rb/sample_app/public/packs
+Completed 200 OK in 10760ms (Views: 10663.0ms | ActiveRecord: 0.0ms | Allocations: 1427364)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-09-26 10:27:23 +0700
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 376)
+Completed 200 OK in 781ms (Views: 775.7ms | ActiveRecord: 0.0ms | Allocations: 1421587)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-09-26 10:27:37 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 103)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4082)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-09-26 10:39:07 +0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/about"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/static_pages/home" for ::1 at 2019-09-26 10:39:34 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 836ms (Views: 835.2ms | ActiveRecord: 0.0ms | Allocations: 1419848)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-09-26 10:39:44 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 103)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 4099)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-09-26 10:46:17 +0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/about"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/static_pages/about" for ::1 at 2019-09-26 10:47:32 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 100)
+Completed 200 OK in 768ms (Views: 767.2ms | ActiveRecord: 0.0ms | Allocations: 1420001)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-09-26 11:39:54 +0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 375)
+Completed 500 Internal Server Error in 837ms (ActiveRecord: 0.0ms | Allocations: 1426093)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+    4:     <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= stylesheet_link_tag "application", media: "all","data-turbolinks-track": "reload"%>
+    7:     <%= javascript_include_tag "application","data-turbolinks-track": "reload" %>
+    8:   </head>
+    9: 
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7
+Started GET "/static_pages/home" for ::1 at 2019-09-26 11:44:13 +0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.1ms | Allocations: 383)
+Completed 200 OK in 16ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3699)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-09-26 11:45:40 +0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 1.2ms | Allocations: 386)
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 3698)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-09-26 11:45:46 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 0.4ms | Allocations: 107)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 746)
+
+
+Started GET "/" for ::1 at 2019-09-27 08:14:31 +0700
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'hello' could not be found for ApplicationController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/static_pages/home" for ::1 at 2019-09-27 08:15:09 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.8ms | Allocations: 695)
+Completed 200 OK in 56ms (Views: 50.7ms | ActiveRecord: 0.0ms | Allocations: 2475)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:15:12 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.1ms | Allocations: 191)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 624)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:15:12 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 189)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 1621)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:15:13 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.7ms | Allocations: 191)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 623)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:15:15 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.5ms | Allocations: 191)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 623)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-09-27 08:15:23 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 0.4ms | Allocations: 104)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-27 08:15:31 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 0.4ms | Allocations: 106)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 652)
+
+
+Started GET "/" for ::1 at 2019-09-27 08:15:43 +0700
+  
+AbstractController::ActionNotFound (The action 'hello' could not be found for ApplicationController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-27 08:18:18 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 18.0ms | Allocations: 483)
+Completed 200 OK in 42ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 2746)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-09-27 08:24:01 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 396.4ms | Allocations: 12715)
+Completed 500 Internal Server Error in 399ms (ActiveRecord: 0.0ms | Allocations: 14381)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/pham/Documents/rb/sample_app/config/locales/vi.yml: expects it to return a hash, but does not):
+    4:     <title>Home | Ruby on Rails Tutorial Sample App</title>
+    5:   </head>
+    6:   <body>
+    7:     <h1><%= t(".PCY") %></h1>
+    8:     <h2>
+    9:       <%= link_to "English", locale:"en" %>
+   10:       <%= link_to "Vietnamese", locale:"vi" %>
+  
+app/views/static_pages/home.html.erb:7
+Started GET "/static_pages/home" for ::1 at 2019-09-27 08:27:23 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 9.1ms | Allocations: 4740)
+Completed 200 OK in 20ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 7956)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:27:26 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.2ms | Allocations: 225)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 1660)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:27:27 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.0ms | Allocations: 221)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 653)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:27:28 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.5ms | Allocations: 221)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 653)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:27:29 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.3ms | Allocations: 221)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 653)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:27:30 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.8ms | Allocations: 218)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 648)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:27:31 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.1ms | Allocations: 218)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 648)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:27:32 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.7ms | Allocations: 218)
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 648)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:27:32 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.1ms | Allocations: 218)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 648)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:30:09 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 8.9ms | Allocations: 4841)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 8054)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:30:19 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.6ms | Allocations: 249)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 1684)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:30:20 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.6ms | Allocations: 244)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:30:21 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.9ms | Allocations: 244)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:30:22 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.8ms | Allocations: 241)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:30:23 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.8ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:30:25 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.7ms | Allocations: 244)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:34:31 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 7.5ms | Allocations: 4841)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 8054)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:34:33 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.5ms | Allocations: 249)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1684)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:34:34 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.7ms | Allocations: 244)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:34:35 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.1ms | Allocations: 244)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:34:35 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.5ms | Allocations: 244)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:34:36 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 241)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:34:37 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.5ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:34:38 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.8ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:34:38 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.7ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:34:39 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.3ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:34:39 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 5.3ms | Allocations: 241)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:34:40 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.9ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:34:58 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.5ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:34:58 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.7ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:34:59 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.9ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:35:00 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.9ms | Allocations: 241)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:18 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 5.7ms | Allocations: 4591)
+Completed 200 OK in 20ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 7805)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:21 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.5ms | Allocations: 249)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 1684)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:21 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 244)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:24 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.8ms | Allocations: 244)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:26 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.6ms | Allocations: 244)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:26 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.8ms | Allocations: 241)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:27 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.4ms | Allocations: 241)
+Completed 200 OK in 14ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:28 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.9ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:28 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.7ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:29 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.4ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:29 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.2ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:30 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.8ms | Allocations: 241)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:30 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.1ms | Allocations: 241)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:31 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.2ms | Allocations: 241)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:31 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.0ms | Allocations: 241)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:32 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.4ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:39 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.1ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:39 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.1ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:40 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:40 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.2ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:41 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.8ms | Allocations: 241)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 672)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:41 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 241)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:42 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.7ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:42 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.5ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 08:37:43 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.8ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 08:37:43 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.3ms | Allocations: 241)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/" for ::1 at 2019-09-27 09:02:53 +0700
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.3ms | Allocations: 483)
+Completed 200 OK in 55ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 2747)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-09-27 09:02:58 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 100.7ms | Allocations: 4308)
+Completed 200 OK in 116ms (Views: 114.6ms | ActiveRecord: 0.0ms | Allocations: 5989)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-27 09:03:01 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.1ms | Allocations: 244)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 677)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-27 09:03:01 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.4ms | Allocations: 249)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 1683)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-09-30 08:59:54 +0700
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 104.2ms | Allocations: 4839)
+Completed 200 OK in 161ms (Views: 129.6ms | ActiveRecord: 0.0ms | Allocations: 8054)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 08:59:57 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.5ms | Allocations: 244)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 677)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-30 08:59:57 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.7ms | Allocations: 249)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 1683)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 08:59:58 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.2ms | Allocations: 244)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-30 08:59:59 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.3ms | Allocations: 244)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 676)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 08:59:59 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.8ms | Allocations: 241)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-30 09:00:00 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.5ms | Allocations: 241)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 09:00:00 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.0ms | Allocations: 241)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-30 09:00:01 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.2ms | Allocations: 241)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 671)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 09:00:10 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.0ms | Allocations: 106)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 651)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-09-30 09:00:23 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 0.3ms | Allocations: 104)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 677)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-09-30 09:12:29 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 4.1ms | Allocations: 4294)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 5984)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-09-30 09:12:31 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 2.8ms | Allocations: 291)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 722)
+
+
+Started GET "/vi/static_pages/help" for ::1 at 2019-09-30 09:12:32 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 1.4ms | Allocations: 293)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 1705)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-09-30 09:12:33 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 2.9ms | Allocations: 291)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 721)
+
+
+Started GET "/vi/static_pages/help" for ::1 at 2019-09-30 09:12:34 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 2.9ms | Allocations: 291)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 721)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 09:12:41 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 2.3ms | Allocations: 1813)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2383)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 09:12:44 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 5.7ms | Allocations: 1541)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2085)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 09:12:45 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 7.1ms | Allocations: 1541)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 1971)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 09:12:46 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 14.4ms | Allocations: 1541)
+Completed 200 OK in 24ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 1971)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 09:12:46 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 8.2ms | Allocations: 1541)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 1971)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 09:12:47 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 2.3ms | Allocations: 1541)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1971)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 09:13:58 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 4.3ms | Allocations: 701)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 2318)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 09:14:00 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.8ms | Allocations: 363)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 1766)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 09:14:01 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 3.7ms | Allocations: 361)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 792)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 09:14:01 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 4.5ms | Allocations: 361)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 791)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 09:14:03 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 2.6ms | Allocations: 361)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 791)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 09:14:09 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/en/static_pages/contact"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 09:15:37 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 4.2ms | Allocations: 888)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 1787)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 09:15:40 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.5ms | Allocations: 258)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 689)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 09:15:40 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.3ms | Allocations: 259)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 800)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 09:15:41 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.2ms | Allocations: 258)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 688)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 09:15:41 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.8ms | Allocations: 258)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 688)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 09:15:42 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 6.6ms | Allocations: 258)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 688)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 09:15:42 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 4.0ms | Allocations: 258)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 688)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 09:15:47 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.0ms | Allocations: 480)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1049)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 09:15:49 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.7ms | Allocations: 256)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 687)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-30 09:15:50 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 257)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 800)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 09:15:50 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.5ms | Allocations: 256)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-30 09:15:51 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.3ms | Allocations: 256)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 09:15:51 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.2ms | Allocations: 256)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 09:22:12 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.0ms | Allocations: 448)
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 2055)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 09:22:13 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 256)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 687)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-30 09:22:15 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.2ms | Allocations: 256)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 1688)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 09:22:16 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 256)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 09:22:19 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 256)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-09-30 09:22:19 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.2ms | Allocations: 256)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-09-30 09:22:20 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.9ms | Allocations: 256)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-09-30 10:11:04 +0700
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 32.5ms | Allocations: 4731)
+Completed 200 OK in 64ms (Views: 50.6ms | ActiveRecord: 0.0ms | Allocations: 7947)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-09-30 10:11:09 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 10.1ms | Allocations: 1718)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 2293)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:14:23 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 3.8ms | Allocations: 1625)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 3223)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:14:24 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 7.0ms | Allocations: 1323)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 1754)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:14:26 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 4.4ms | Allocations: 1329)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 2761)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:14:27 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.4ms | Allocations: 1326)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 1758)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:19:35 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 65.6ms | Allocations: 5508)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.0ms | Allocations: 7167)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:19:36 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 7.1ms | Allocations: 1369)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 1800)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:19:42 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.0ms | Allocations: 1372)
+Completed 200 OK in 27ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 2794)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:19:45 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 7.2ms | Allocations: 1372)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 1804)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:19:45 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.5ms | Allocations: 1369)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 1822)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:19:46 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 8.3ms | Allocations: 1369)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 1799)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:19:47 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 21.6ms | Allocations: 1370)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 1802)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:19:47 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 3.5ms | Allocations: 1369)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 1799)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:19:49 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 2.3ms | Allocations: 1369)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1799)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:21:03 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 8.5ms | Allocations: 5168)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 6858)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:21:05 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 2.1ms | Allocations: 1371)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2785)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:21:16 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.7ms | Allocations: 1369)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 1799)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:21:19 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 5.9ms | Allocations: 1369)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 1799)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:22:27 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 5.7ms | Allocations: 1369)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 1799)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:22:28 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 8.4ms | Allocations: 1369)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 1799)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:22:29 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.9ms | Allocations: 1369)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 1799)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:25:08 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 11.3ms | Allocations: 5857)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 7526)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:25:17 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 8.3ms | Allocations: 1770)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 2201)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:25:18 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 9.5ms | Allocations: 1773)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 3205)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:27:03 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 2.3ms | Allocations: 2114)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3739)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:27:08 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 3.3ms | Allocations: 1795)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3198)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:27:10 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.6ms | Allocations: 1795)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2225)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:27:10 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 2.8ms | Allocations: 1795)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2225)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:27:13 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 3.0ms | Allocations: 1795)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2225)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:27:13 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 14.1ms | Allocations: 1795)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 2226)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:27:14 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 5.0ms | Allocations: 1795)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 2226)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:27:15 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.9ms | Allocations: 1795)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 2225)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:27:16 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 10.6ms | Allocations: 1795)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 2225)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:27:18 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.7ms | Allocations: 1795)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2225)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:27:20 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 10.4ms | Allocations: 1795)
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 2225)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:28:00 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 8.7ms | Allocations: 1795)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 2225)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:30:20 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 4.8ms | Allocations: 5342)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 7011)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:33:07 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 10.2ms | Allocations: 5091)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 6760)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:33:09 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.2ms | Allocations: 1344)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1775)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:33:10 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 3.5ms | Allocations: 1347)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 2779)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:33:12 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 3.0ms | Allocations: 1344)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:33:13 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 4.5ms | Allocations: 1344)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:33:14 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 4.1ms | Allocations: 1344)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:33:15 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.2ms | Allocations: 1344)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:33:16 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.1ms | Allocations: 1344)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:33:17 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 2.3ms | Allocations: 1344)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:33:18 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.0ms | Allocations: 1344)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:33:19 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 2.7ms | Allocations: 1344)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:33:20 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.8ms | Allocations: 1344)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:34:09 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 9.6ms | Allocations: 5128)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 6799)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:34:11 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.8ms | Allocations: 1365)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1796)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-09-30 10:34:12 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.9ms | Allocations: 1368)
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 2801)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-09-30 10:34:14 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 8.1ms | Allocations: 1365)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 1795)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:34:37 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 5.9ms | Allocations: 1022)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 1591)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:35:26 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.0ms | Allocations: 787)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 1331)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:37:09 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 6.6ms | Allocations: 786)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 1216)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:37:16 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.1ms | Allocations: 786)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 1216)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:37:35 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.7ms | Allocations: 786)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 1216)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:40:00 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 7.2ms | Allocations: 4253)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 5922)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:40:01 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.1ms | Allocations: 256)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 687)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:40:02 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.6ms | Allocations: 256)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 1687)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:40:03 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.5ms | Allocations: 256)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 687)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:40:03 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.1ms | Allocations: 256)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:40:04 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.2ms | Allocations: 256)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 687)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:40:04 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.1ms | Allocations: 256)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:40:05 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.7ms | Allocations: 256)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:40:05 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.3ms | Allocations: 256)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:40:06 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.0ms | Allocations: 256)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 687)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:40:07 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.4ms | Allocations: 256)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:40:07 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.8ms | Allocations: 256)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:41:45 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 4.6ms | Allocations: 4239)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 5907)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:42:08 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 4.1ms | Allocations: 446)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 2041)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:42:09 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.3ms | Allocations: 259)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 1692)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:42:14 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.1ms | Allocations: 258)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 688)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:42:16 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.9ms | Allocations: 258)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 688)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:42:43 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 5.1ms | Allocations: 450)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 2076)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:42:46 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 1.7ms | Allocations: 258)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 1672)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-09-30 10:42:48 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.9ms | Allocations: 258)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 688)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-09-30 10:42:48 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.1ms | Allocations: 258)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 688)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-02 08:20:16 +0700
+  [1m[35m (11.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 199.5ms | Allocations: 4746)
+Completed 200 OK in 268ms (Views: 213.6ms | ActiveRecord: 0.0ms | Allocations: 7961)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-10-02 08:20:25 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 20.1ms | Allocations: 1770)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 2345)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-02 08:20:34 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 5.8ms | Allocations: 1375)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 2810)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-02 08:20:38 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 7.3ms | Allocations: 1365)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 1795)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-02 08:20:55 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 8.9ms | Allocations: 1365)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 1795)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-02 08:20:58 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 7.8ms | Allocations: 1365)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 1795)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-02 10:01:49 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 30.9ms | Allocations: 3948)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms | Allocations: 5626)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-02 10:01:55 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.9ms | Allocations: 1205)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1616)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= t(".el") %> <%= link_to "English", locale:"en" %>
+<%= t(".vn") %> <%= link_to "Vietnamese", locale:"vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= t(".el") %> <%= link_to "English", locale:"en" %>
+3:    <%= t(".vn") %> <%= link_to "Vietnamese", locale:"vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/en/static_pages/about" for ::1 at 2019-10-02 10:08:13 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.1ms | Allocations: 1186)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2866)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= t(".en") %> <%= link_to "English", locale:"en" %>
+<%= t(".vi") %> <%= link_to "Vietnamese", locale:"vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= t(".en") %> <%= link_to "English", locale:"en" %>
+3:    <%= t(".vi") %> <%= link_to "Vietnamese", locale:"vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/en/static_pages/about" for ::1 at 2019-10-02 10:12:31 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 4.7ms | Allocations: 1176)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 2783)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to "<%= t(".en") %>", locale:"en" %>
+<%= link_to "<%= t(".vi") %>", locale:"vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to "<%= t(".en") %>", locale:"en" %>
+3:    <%= link_to "<%= t(".vi") %>", locale:"vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected '>'
+app/views/static_pages/about.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: unknown regexp options - www
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:7: unknown regexp options - www
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/static_pages/about.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:8: unknown regexp options - crcat
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:9: unknown regexp options - rbyral
+app/views/static_pages/about.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:15: unterminated string meets end of file
+app/views/static_pages/about.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected '>'
+app/views/static_pages/about.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: unknown regexp options - www
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:7: unknown regexp options - www
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/static_pages/about.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:8: unknown regexp options - crcat
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:9: unknown regexp options - rbyral
+app/views/static_pages/about.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:15: unterminated string meets end of file
+app/views/static_pages/about.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected '>'
+app/views/static_pages/about.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: unknown regexp options - www
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:7: unknown regexp options - www
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/static_pages/about.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:8: unknown regexp options - crcat
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:9: unknown regexp options - rbyral
+app/views/static_pages/about.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:15: unterminated string meets end of file
+app/views/static_pages/about.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected '>'
+app/views/static_pages/about.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: unknown regexp options - www
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:7: unknown regexp options - www
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/static_pages/about.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:8: unknown regexp options - crcat
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:9: unknown regexp options - rbyral
+app/views/static_pages/about.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:15: unterminated string meets end of file
+app/views/static_pages/about.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected '>'
+app/views/static_pages/about.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: unknown regexp options - www
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:7: unknown regexp options - www
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/static_pages/about.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:8: unknown regexp options - crcat
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:9: unknown regexp options - rbyral
+app/views/static_pages/about.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:15: unterminated string meets end of file
+app/views/static_pages/about.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected '>'
+app/views/static_pages/about.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:6: unknown regexp options - www
+app/views/static_pages/about.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:7: unknown regexp options - www
+app/views/static_pages/about.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/static_pages/about.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:8: unknown regexp options - crcat
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/static_pages/about.html.erb:9: unknown regexp options - rbyral
+app/views/static_pages/about.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/static_pages/about.html.erb:15: unterminated string meets end of file
+app/views/static_pages/about.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/en/static_pages/about" for ::1 at 2019-10-02 10:13:03 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 4.2ms | Allocations: 1180)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2786)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to <%= t(".en") %>, locale:"en" %>
+<%= link_to <%= t(".vi") %>, locale:"vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to <%= t(".en") %>, locale:"en" %>
+3:    <%= link_to <%= t(".vi") %>, locale:"vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/static_pages/home" for ::1 at 2019-10-03 08:33:18 +0700
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 195.2ms | Allocations: 5427)
+Completed 200 OK in 251ms (Views: 202.8ms | ActiveRecord: 0.0ms | Allocations: 8643)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-10-03 08:33:24 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 28.3ms | Allocations: 3951)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms | Allocations: 4515)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-10-03 08:33:46 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 1.4ms | Allocations: 1175)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1588)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to t(".el"), locale:"en" %>
+<%= link_to t(".vn"), locale:"vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to t(".el"), locale:"en" %>
+3:    <%= link_to t(".vn"), locale:"vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/static_pages/about" for ::1 at 2019-10-03 08:35:08 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 0.8ms | Allocations: 1157)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2820)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to t(".en"), locale:"en" %>
+<%= link_to t(".vi"), locale:"vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to t(".en"), locale:"en" %>
+3:    <%= link_to t(".vi"), locale:"vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/static_pages/about" for ::1 at 2019-10-03 08:39:52 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 7.0ms | Allocations: 1191)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 2782)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to t(".English"), locale:"en" %>
+<%= link_to t(".Vietnamese"), locale:"vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to t(".English"), locale:"en" %>
+3:    <%= link_to t(".Vietnamese"), locale:"vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/static_pages/about" for ::1 at 2019-10-03 08:40:43 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 4.5ms | Allocations: 1191)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 2782)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to "English", locale:"en" %>
+<%= link_to "Vietnamese", locale:"vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to "English", locale:"en" %>
+3:    <%= link_to "Vietnamese", locale:"vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/static_pages/about" for ::1 at 2019-10-03 08:42:57 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 0.9ms | Allocations: 1141)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1770)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to "English", locale:"en" %>
+<%= link_to "Vietnamese", locale:"vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to "English", locale:"en" %>
+3:    <%= link_to "Vietnamese", locale:"vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/static_pages/about" for ::1 at 2019-10-03 08:43:13 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 2.9ms | Allocations: 1190)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to "English", locale:"en" %>
+<%= link_to "Vietnamese", locale:"vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to "English", locale:"en" %>
+3:    <%= link_to "Vietnamese", locale:"vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/static_pages/about" for ::1 at 2019-10-03 08:44:02 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.2ms | Allocations: 1193)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 2781)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to "English", locale: "en" %>
+<%= link_to "Vietnamese", locale: "vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to "English", locale: "en" %>
+3:    <%= link_to "Vietnamese", locale: "vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/static_pages/about" for ::1 at 2019-10-03 08:44:22 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 3.4ms | Allocations: 1190)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to "English", locale: "en" %>
+<%= link_to "Vietnamese", locale: "vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to "English", locale: "en" %>
+3:    <%= link_to "Vietnamese", locale: "vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/static_pages/about" for ::1 at 2019-10-03 08:45:33 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 7.0ms | Allocations: 1190)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to "English", locale: "en" %>
+<%= link_to "Vietnamese", locale: "vi" %>
+<h1><%= t(".About") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to "English", locale: "en" %>
+3:    <%= link_to "Vietnamese", locale: "vi" %>
+4:    <h1><%= t(".About") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/static_pages/home" for ::1 at 2019-10-03 08:45:40 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 5.2ms | Allocations: 4588)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 5159)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-10-03 08:45:42 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.8ms | Allocations: 257)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 688)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 08:45:43 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.7ms | Allocations: 261)
+Completed 200 OK in 18ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 1693)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-10-03 08:45:45 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.3ms | Allocations: 257)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 687)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 08:45:50 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.4ms | Allocations: 256)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-10-03 08:45:53 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.4ms | Allocations: 256)
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 686)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 08:46:46 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 0.8ms | Allocations: 1175)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1586)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to "English", locale: "en" %>
+<%= link_to "Vietnamese", locale: "vi" %>
+<h1><%= t(".About") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to "English", locale: "en" %>
+3:    <%= link_to "Vietnamese", locale: "vi" %>
+4:    <h1><%= t(".About") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 08:49:38 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 0.9ms | Allocations: 1151)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2800)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t(".a") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".a") %></h1>
+  <p>
+    <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+    <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+    <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+	<%= t(".saftt") %>
+  </p>
+
+
+):
+1:    <% provide(:title, t(".a") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".a") %></h1>
+5:      <p>
+6:        <%= link_to t(".rrt"), "https://www.railstutorial.org/" %> <%= t(".isa") %>
+7:        <%= link_to t(".b"), "https://www.railstutorial.org/book" %>
+8:        <%= t(".and") %> <%=  link_to t(".screencast series"), "http://screencasts.railstutorial.org/" %>
+9:    	<%= t(".twdw") %> <%= link_to t(".Ruby on Rails"), "http://rubyonrails.org/" %>
+10:    	<%= t(".saftt") %>
+11:      </p>
+  
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+app/views/static_pages/about.html.erb:2: syntax error, unexpected tIVAR, expecting ')'
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 08:52:02 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 30.0ms | Allocations: 5656)
+Completed 200 OK in 43ms (Views: 39.6ms | ActiveRecord: 0.0ms | Allocations: 7261)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-03 08:52:07 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 5.8ms | Allocations: 1431)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 2864)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 08:52:08 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.7ms | Allocations: 1429)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 1859)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-03 08:52:10 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.9ms | Allocations: 1428)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 1858)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 08:52:11 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 4.8ms | Allocations: 1428)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 1858)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-03 08:52:13 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 7.0ms | Allocations: 1428)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 1858)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 08:52:16 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.0ms | Allocations: 1428)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 1858)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-03 08:52:18 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 6.1ms | Allocations: 1428)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 1858)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-10-03 08:58:41 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 4.0ms | Allocations: 4895)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 6584)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-10-03 08:59:16 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 5.6ms | Allocations: 4189)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 4836)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-10-03 08:59:18 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.7ms | Allocations: 321)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 751)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-10-03 08:59:19 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.7ms | Allocations: 322)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 1734)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-10-03 08:59:23 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.4ms | Allocations: 321)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 751)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-10-03 08:59:25 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 0.6ms | Allocations: 321)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 751)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-10-03 08:59:30 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 4.2ms | Allocations: 321)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 751)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-10-03 08:59:31 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.9ms | Allocations: 321)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 751)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-10-03 09:00:40 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 4.5ms | Allocations: 4504)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 6193)
+
+
+Started GET "/vi/static_pages/help" for ::1 at 2019-10-03 09:00:43 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 1.2ms | Allocations: 356)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1769)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-10-03 09:00:44 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 3.4ms | Allocations: 354)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 784)
+
+
+Started GET "/vi/static_pages/help" for ::1 at 2019-10-03 09:00:45 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 4.5ms | Allocations: 354)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 784)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-10-03 09:00:45 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 2.7ms | Allocations: 354)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 784)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-10-03 09:03:02 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 6.3ms | Allocations: 4494)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 6173)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 09:03:07 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.0ms | Allocations: 1081)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1634)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(."sp") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".sp") %></h1>
+<p>
+  <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+  "https://www.railstutorial.org/"%>
+</p>
+):
+1:    <% provide :title, t(."sp") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".sp") %></h1>
+5:    <p>
+6:      <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+7:      "https://www.railstutorial.org/"%>
+8:    </p>
+  
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 09:04:09 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.7ms | Allocations: 1045)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2715)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(."home") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".sp") %></h1>
+<p>
+  <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+  "https://www.railstutorial.org/"%>
+</p>
+):
+1:    <% provide :title, t(."home") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".sp") %></h1>
+5:    <p>
+6:      <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+7:      "https://www.railstutorial.org/"%>
+8:    </p>
+  
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 09:04:59 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.8ms | Allocations: 1042)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2712)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(."sp") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".sp") %></h1>
+<p>
+  <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+  "https://www.railstutorial.org/"%>
+</p>
+):
+1:    <% provide :title, t(."sp") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".sp") %></h1>
+5:    <p>
+6:      <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+7:      "https://www.railstutorial.org/"%>
+8:    </p>
+  
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 09:06:15 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.7ms | Allocations: 1042)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2711)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(."home") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".sp") %></h1>
+<p>
+  <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+  "https://www.railstutorial.org/"%>
+</p>
+):
+1:    <% provide :title, t(."home") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".sp") %></h1>
+5:    <p>
+6:      <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+7:      "https://www.railstutorial.org/"%>
+8:    </p>
+  
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+Started GET "/en/static_pages/help" for ::1 at 2019-10-03 09:06:25 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 18.8ms | Allocations: 4522)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 5093)
+
+
+Started GET "/vi/static_pages/help" for ::1 at 2019-10-03 09:06:28 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 4.1ms | Allocations: 356)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 1769)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-10-03 09:06:29 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 2.3ms | Allocations: 354)
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 784)
+
+
+Started GET "/vi/static_pages/help" for ::1 at 2019-10-03 09:06:30 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 3.6ms | Allocations: 354)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 784)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-10-03 09:06:30 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb
+  Rendered static_pages/help.html.erb (Duration: 2.5ms | Allocations: 354)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 784)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 09:06:36 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.5ms | Allocations: 1066)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1477)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(."home") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".sp") %></h1>
+<p>
+  <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+  "https://www.railstutorial.org/"%>
+</p>
+):
+1:    <% provide :title, t(."home") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".sp") %></h1>
+5:    <p>
+6:      <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+7:      "https://www.railstutorial.org/"%>
+8:    </p>
+  
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 09:07:29 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.7ms | Allocations: 1042)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2711)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(."sp") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".sp") %></h1>
+<p>
+  <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+  "https://www.railstutorial.org/"%>
+</p>
+):
+1:    <% provide :title, t(."sp") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".sp") %></h1>
+5:    <p>
+6:      <%= t(".tutorial")%> <%= link_to " Ruby on Rails Tutorial sample application.", 
+7:      "https://www.railstutorial.org/"%>
+8:    </p>
+  
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+app/views/static_pages/home.html.erb:1: syntax error, unexpected '.', expecting ')'
+app/views/static_pages/home.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 09:09:50 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 12.6ms | Allocations: 4441)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 6066)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-10-03 09:09:52 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.3ms | Allocations: 320)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 1733)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 09:10:50 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.7ms | Allocations: 319)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 749)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-10-03 09:10:51 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.0ms | Allocations: 319)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 749)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 09:10:53 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.8ms | Allocations: 319)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 749)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Documents/rb/Sample_app1/config/environment.rb:2)
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 10:02:06 +0700
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 123.5ms | Allocations: 4966)
+Completed 200 OK in 176ms (Views: 137.2ms | ActiveRecord: 0.0ms | Allocations: 8226)
+
+
+Started GET "/vi" for ::1 at 2019-10-03 10:02:08 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.7ms | Allocations: 399)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 1828)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:09 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.3ms | Allocations: 394)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 840)
+
+
+Started GET "/vi" for ::1 at 2019-10-03 10:02:09 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 5.0ms | Allocations: 394)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 840)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:10 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.7ms | Allocations: 394)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 840)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:11 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 391)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:15 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.3ms | Allocations: 391)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:16 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.1ms | Allocations: 391)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:17 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.2ms | Allocations: 391)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:18 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.9ms | Allocations: 391)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:18 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.7ms | Allocations: 391)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:19 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.2ms | Allocations: 391)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/vi" for ::1 at 2019-10-03 10:02:21 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 3.3ms | Allocations: 391)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:21 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 6.1ms | Allocations: 391)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:22 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.2ms | Allocations: 391)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:02:26 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.2ms | Allocations: 391)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:03:07 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.5ms | Allocations: 391)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 835)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-03 10:06:43 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.1ms | Allocations: 332)
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 902)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-03 10:13:04 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 5.8ms | Allocations: 574)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.0ms | Allocations: 2185)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-10-03 10:13:11 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 5.8ms | Allocations: 2055)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 2642)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 10:13:16 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 10.5ms | Allocations: 1677)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 2122)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 10:13:18 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 11.6ms | Allocations: 1677)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 2121)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 10:13:20 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 10.5ms | Allocations: 1677)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 2121)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 10:13:21 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 10.7ms | Allocations: 1677)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 2121)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 10:15:08 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 9.8ms | Allocations: 1401)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 1966)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-03 10:16:23 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.6ms | Allocations: 318)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 885)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Documents/rb/Sample_app1/config/environment.rb:2)
+Started GET "/static_pages/home" for ::1 at 2019-10-03 10:36:34 +0700
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 190.8ms | Allocations: 5146)
+Completed 200 OK in 275ms (Views: 228.6ms | ActiveRecord: 0.0ms | Allocations: 8509)
+
+
+Started GET "/static_pages/contact" for ::1 at 2019-10-03 10:36:50 +0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 13.5ms | Allocations: 582)
+Completed 200 OK in 26ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 1293)
+
+
+Started GET "/static_pages/contact" for ::1 at 2019-10-03 10:36:53 +0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.9ms | Allocations: 344)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 915)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-10-03 10:36:58 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.5ms | Allocations: 345)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 1915)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-10-03 10:37:01 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.9ms | Allocations: 344)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 912)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-10-03 10:41:35 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 9.8ms | Allocations: 4731)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 6536)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-10-03 10:41:37 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 1.6ms | Allocations: 341)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 907)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-10-03 10:41:38 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 3.5ms | Allocations: 342)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-10-03 10:41:39 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 4.9ms | Allocations: 341)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 905)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-10-03 10:41:39 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 5.0ms | Allocations: 341)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 905)
+
+
+Started GET "/en/static_pages/home" for ::1 at 2019-10-03 10:41:45 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.7ms | Allocations: 574)
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1279)
+
+
+Started GET "/vi" for ::1 at 2019-10-03 10:41:47 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 4.1ms | Allocations: 341)
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 1017)
+
+
+Started GET "/en" for ::1 at 2019-10-03 10:41:51 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 2.6ms | Allocations: 339)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 903)
+
+
+Started GET "/vi" for ::1 at 2019-10-03 10:41:52 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 0.8ms | Allocations: 339)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 903)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-10-03 10:41:59 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 34.3ms | Allocations: 1777)
+Completed 200 OK in 41ms (Views: 37.4ms | ActiveRecord: 0.0ms | Allocations: 2482)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 10:42:00 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 3.1ms | Allocations: 1401)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 1966)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-03 10:42:01 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 7.1ms | Allocations: 1404)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 2081)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-03 10:42:03 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb
+  Rendered static_pages/about.html.erb (Duration: 9.6ms | Allocations: 1401)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 1965)
+
+
