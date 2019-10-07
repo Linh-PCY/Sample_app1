@@ -3672,3 +3672,3666 @@ Processing by StaticPagesController#about as HTML
 Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 1965)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Documents/rb/Sample_app1/config/environment.rb:2)
+Started GET "/static_pages/home" for ::1 at 2019-10-04 08:15:53 +0700
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 33.9ms | Allocations: 4465)
+Completed 200 OK in 106ms (Views: 60.9ms | ActiveRecord: 0.0ms | Allocations: 7851)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 08:25:38 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb
+  Rendered static_pages/home.html.erb (Duration: 1.8ms | Allocations: 542)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2430)
+
+
+Started GET "/static_pages/contact" for ::1 at 2019-10-04 08:25:55 +0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 5.0ms | Allocations: 595)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 1442)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-10-04 08:38:38 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb
+  Rendered static_pages/contact.html.erb (Duration: 2.8ms | Allocations: 345)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 2052)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/en/static_pages/home" for ::1 at 2019-10-04 09:00:00 +0700
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 30.5ms | Allocations: 5233)
+Completed 500 Internal Server Error in 324ms (ActiveRecord: 0.0ms | Allocations: 89337)
+
+
+  
+ActionView::Template::Error (undefined method `full_title' for #<#<Class:0x000055ad68b99130>:0x000055ad68b75eb0>):
+    2: <!DOCTYPE html>
+    3: <html>
+    4:   <head>
+    5:     <title><%= full_title(yield(:title)) %></title>
+    6:     <%= csrf_meta_tags %>
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:5
+Started GET "/en/static_pages/home" for ::1 at 2019-10-04 09:00:52 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 536)
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 0.0ms | Allocations: 83449)
+
+
+  
+ActionView::Template::Error (undefined method `full_title' for #<#<Class:0x00007fb68d0c2920>:0x00007fb68d0c0f58>):
+    1: <!DOCTYPE html>
+    2: <html>
+    3:   <head>
+    4:     <title><%= full_title(yield(:title)) %></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:4
+Started GET "/en/static_pages/home" for ::1 at 2019-10-04 09:00:58 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 349)
+Completed 500 Internal Server Error in 255ms (ActiveRecord: 0.0ms | Allocations: 82202)
+
+
+  
+ActionView::Template::Error (undefined method `full_title' for #<#<Class:0x00007fb68d0c2920>:0x00007fb68d0ac1e8>):
+    1: <!DOCTYPE html>
+    2: <html>
+    3:   <head>
+    4:     <title><%= full_title(yield(:title)) %></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:4
+Started GET "/en/static_pages/home" for ::1 at 2019-10-04 09:01:38 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 529)
+Completed 500 Internal Server Error in 1063ms (ActiveRecord: 0.0ms | Allocations: 1425912)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+    4:     <title><%= yield(:title) %></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8:     <!--[if lt IE 9]>
+    9:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+   10:       </script>
+  
+app/views/layouts/application.html.erb:7
+Started GET "/en/static_pages/home" for ::1 at 2019-10-04 09:02:24 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 526)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3675ms (Views: 3673.8ms | ActiveRecord: 0.0ms | Allocations: 6075)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-04 09:13:52 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 6.1ms | Allocations: 5832)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1698ms (Views: 1695.0ms | ActiveRecord: 0.0ms | Allocations: 11376)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-04 09:14:28 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2175)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1552ms (Views: 1550.7ms | ActiveRecord: 0.0ms | Allocations: 7134)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-04 09:14:34 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2162)
+[Webpacker] Compiling…
+Started GET "/en/static_pages/about" for ::1 at 2019-10-04 09:14:35 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1402)
+[Webpacker] Compiling…
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-04 09:14:35 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2162)
+[Webpacker] Compiling…
+Started GET "/en/static_pages/about" for ::1 at 2019-10-04 09:14:36 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1402)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2264ms (Views: 2262.2ms | ActiveRecord: 0.0ms | Allocations: 29994)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-04 09:14:37 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2165)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2560ms (Views: 2557.9ms | ActiveRecord: 0.0ms | Allocations: 30215)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3268ms (Views: 3263.6ms | ActiveRecord: 0.0ms | Allocations: 23770)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3012ms (Views: 3010.3ms | ActiveRecord: 0.0ms | Allocations: 16585)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2781ms (Views: 2779.0ms | ActiveRecord: 0.0ms | Allocations: 9925)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-04 09:15:48 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 6.4ms | Allocations: 5483)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1630ms (Views: 1628.6ms | ActiveRecord: 0.0ms | Allocations: 10248)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-04 09:15:52 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1402)
+[Webpacker] Compiling…
+Started GET "/en/static_pages/about" for ::1 at 2019-10-04 09:15:52 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1405)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1818ms (Views: 1817.0ms | ActiveRecord: 0.0ms | Allocations: 13364)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1765ms (Views: 1763.4ms | ActiveRecord: 0.0ms | Allocations: 6936)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-04 09:15:57 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1402)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1671ms (Views: 1669.1ms | ActiveRecord: 0.0ms | Allocations: 5833)
+
+
+Started GET "/en/static_pages/about" for ::1 at 2019-10-04 09:16:00 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1402)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1641ms (Views: 1638.9ms | ActiveRecord: 0.0ms | Allocations: 5841)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-04 09:16:03 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1402)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2006ms (Views: 2004.2ms | ActiveRecord: 0.0ms | Allocations: 5843)
+
+
+Started GET "/vi/static_pages/about" for ::1 at 2019-10-04 09:49:54 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 5.7ms | Allocations: 5726)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2051ms (Views: 2047.6ms | ActiveRecord: 0.0ms | Allocations: 11255)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-10-04 10:00:40 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4390)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5883)
+
+
+  
+ActionView::Template::Error (The asset "rails.png" is not present in the asset pipeline.):
+     8: </p>
+     9: <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+    10: </div>
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+  
+app/views/static_pages/home.html.erb:11
+Started GET "/vi/static_pages/home" for ::1 at 2019-10-04 10:03:31 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1133.1ms | Allocations: 1134342)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2936ms (Views: 2933.1ms | ActiveRecord: 0.0ms | Allocations: 1139819)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:10:39 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:10:44 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7166.4ms | Allocations: 1807981)
+[Webpacker] Compiling…
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3378.1ms | Allocations: 1566558)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 21199ms (Views: 20976.1ms | ActiveRecord: 0.0ms | Allocations: 2284031)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 16819ms (Views: 16817.1ms | ActiveRecord: 0.0ms | Allocations: 1572545)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:16:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1541)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms | Allocations: 10766)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /home/pham/Desktop/chapter5/app/assets/config
+  /home/pham/Desktop/chapter5/app/assets/images
+  /home/pham/Desktop/chapter5/app/assets/stylesheets
+  /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-6.0.0/app/assets/javascripts
+  /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-6.0.0/app/assets/javascripts
+  /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-6.0.0/lib/assets/compiled
+  /home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/pham/Desktop/chapter5/node_modules):
+    3:   <head>
+    4:     <title><%= yield(:title) %></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8:     <!--[if lt IE 9]>
+    9:       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+  
+app/assets/stylesheets/custom.scss:1
+app/views/layouts/application.html.erb:6
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:16:16 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1537)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2182ms (Views: 2180.0ms | ActiveRecord: 0.0ms | Allocations: 10568)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:17:22 +0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4756.6ms | Allocations: 3643084)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6611ms (Views: 6568.0ms | ActiveRecord: 0.0ms | Allocations: 3661672)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:20:31 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1591)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4015ms (Views: 4013.8ms | ActiveRecord: 0.0ms | Allocations: 1364359)
+
+
+Started GET "/vi" for ::1 at 2019-10-04 10:20:37 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1580)
+[Webpacker] Compiling…
+Started GET "/en" for ::1 at 2019-10-04 10:20:38 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1587)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1995ms (Views: 1992.7ms | ActiveRecord: 0.0ms | Allocations: 32367)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1829ms (Views: 1823.6ms | ActiveRecord: 0.0ms | Allocations: 16707)
+
+
+Started GET "/vi" for ::1 at 2019-10-04 10:20:43 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1585)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2209ms (Views: 2206.7ms | ActiveRecord: 0.0ms | Allocations: 15051)
+
+
+Started GET "/en" for ::1 at 2019-10-04 10:22:32 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1580)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2029ms (Views: 2027.9ms | ActiveRecord: 0.0ms | Allocations: 15042)
+
+
+Started GET "/vi" for ::1 at 2019-10-04 10:22:36 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1585)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2206ms (Views: 2204.4ms | ActiveRecord: 0.0ms | Allocations: 15057)
+
+
+Started GET "/vi" for ::1 at 2019-10-04 10:52:27 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1580)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3859ms (Views: 3856.5ms | ActiveRecord: 0.0ms | Allocations: 1366002)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:52:34 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1580)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1410ms (Views: 1407.8ms | ActiveRecord: 0.0ms | Allocations: 15305)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:52:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1580)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3804ms (Views: 3801.3ms | ActiveRecord: 0.0ms | Allocations: 1367036)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:53:04 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1580)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3728ms (Views: 3724.1ms | ActiveRecord: 0.0ms | Allocations: 1367007)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:55:10 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1580)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3700ms (Views: 3698.7ms | ActiveRecord: 0.0ms | Allocations: 1370136)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:55:38 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1580)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3790ms (Views: 3788.4ms | ActiveRecord: 0.0ms | Allocations: 1369725)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:55:58 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1580)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3598ms (Views: 3596.8ms | ActiveRecord: 0.0ms | Allocations: 1370576)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:56:26 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1580)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3574ms (Views: 3572.8ms | ActiveRecord: 0.0ms | Allocations: 1370121)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:56:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1580)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3722ms (Views: 3720.8ms | ActiveRecord: 0.0ms | Allocations: 1370159)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 10:59:01 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1846)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3489ms (Views: 3487.8ms | ActiveRecord: 0.0ms | Allocations: 1371032)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:03:04 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 27.4ms | Allocations: 5983)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3597ms (Views: 3594.8ms | ActiveRecord: 0.0ms | Allocations: 1375339)
+
+
+Started GET "/vi" for ::1 at 2019-10-04 11:03:11 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1607)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1871ms (Views: 1869.2ms | ActiveRecord: 0.0ms | Allocations: 15336)
+
+
+Started GET "/en" for ::1 at 2019-10-04 11:03:14 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1603)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2122ms (Views: 2120.4ms | ActiveRecord: 0.0ms | Allocations: 15825)
+
+
+Started GET "/vi" for ::1 at 2019-10-04 11:03:33 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2031ms (Views: 2029.4ms | ActiveRecord: 0.0ms | Allocations: 15289)
+
+
+Started GET "/vi" for ::1 at 2019-10-04 11:05:16 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2802)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2182ms (Views: 2179.9ms | ActiveRecord: 0.0ms | Allocations: 17430)
+
+
+Started GET "/en" for ::1 at 2019-10-04 11:05:23 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2517)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2048ms (Views: 2045.9ms | ActiveRecord: 0.0ms | Allocations: 16651)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:06:12 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1856)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1990ms (Views: 1987.9ms | ActiveRecord: 0.0ms | Allocations: 16576)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:06:39 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.4ms | Allocations: 5923)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2014ms (Views: 2011.3ms | ActiveRecord: 0.0ms | Allocations: 20677)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:09:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1856)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2130ms (Views: 2129.1ms | ActiveRecord: 0.0ms | Allocations: 16573)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:10:23 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1607)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3797ms (Views: 3795.5ms | ActiveRecord: 0.0ms | Allocations: 1372625)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:11:36 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4402ms (Views: 4400.6ms | ActiveRecord: 0.0ms | Allocations: 1372192)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:15:23 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5037ms (Views: 5034.2ms | ActiveRecord: 0.0ms | Allocations: 1373039)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:16:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4462ms (Views: 4459.4ms | ActiveRecord: 0.0ms | Allocations: 1372201)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:19:49 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6193ms (Views: 6189.2ms | ActiveRecord: 0.0ms | Allocations: 1372584)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:41:30 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 86.6ms | Allocations: 1863)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.9ms | Allocations: 94)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 240)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 171)
+Completed 200 OK in 17154ms (Views: 17071.7ms | ActiveRecord: 0.0ms | Allocations: 17915)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:43:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1856)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 164)
+Completed 200 OK in 2310ms (Views: 2307.2ms | ActiveRecord: 0.0ms | Allocations: 17781)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:43:37 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1856)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.7ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 3.0ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 164)
+Completed 200 OK in 1996ms (Views: 1994.5ms | ActiveRecord: 0.0ms | Allocations: 17758)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-04 11:44:58 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1607)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 4094ms (Views: 4092.0ms | ActiveRecord: 0.0ms | Allocations: 1377887)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/static_pages/home" for ::1 at 2019-10-07 08:19:37 +0700
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1615.3ms | Allocations: 1446537)
+[Webpacker] Compiling…
+Started GET "/static_pages/home" for ::1 at 2019-10-07 08:19:41 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1613)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 32.8ms | Allocations: 581)
+  Rendered layouts/_shim.html.erb (Duration: 20.1ms | Allocations: 116)
+  Rendered layouts/_header.html.erb (Duration: 3.5ms | Allocations: 277)
+  Rendered layouts/_header.html.erb (Duration: 2.4ms | Allocations: 316)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 29)
+Completed 200 OK in 9614ms (Views: 9564.4ms | ActiveRecord: 0.0ms | Allocations: 1482307)
+
+
+Completed 200 OK in 5604ms (Views: 5601.4ms | ActiveRecord: 0.0ms | Allocations: 17492)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 08:45:44 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 51.9ms | Allocations: 1854)
+Completed 500 Internal Server Error in 1177ms (ActiveRecord: 0.0ms | Allocations: 96038)
+
+
+  
+ActionView::Template::Error (undefined method `full_title' for #<#<Class:0x00007f735ec56b78>:0x00007f735ec54d78>):
+    1: <!DOCTYPE html>
+    2: <html>
+    3:   <head>
+    4:     <title><%= full_title(yield(:title)) %></title>
+    5:     <%= render "layouts/rails_default" %>
+    6:     <%= render "layouts/shim" %>
+    7:   </head>
+  
+app/views/layouts/application.html.erb:4
+Started GET "/static_pages/home" for ::1 at 2019-10-07 08:46:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1877)
+Completed 500 Internal Server Error in 346ms (ActiveRecord: 0.0ms | Allocations: 91468)
+
+
+  
+ActionView::Template::Error (undefined method `full_title' for #<#<Class:0x00007f735e35d238>:0x00007f735e3493f0>):
+    1: <!DOCTYPE html>
+    2: <html>
+    3:   <head>
+    4:     <title><%= full_title(yield(:title)) %></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track": "reload" %>
+    7:     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+  
+app/views/layouts/application.html.erb:4
+Started GET "/static_pages/home" for ::1 at 2019-10-07 08:47:56 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 37.3ms | Allocations: 1860)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 17.3ms | Allocations: 94)
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 240)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 171)
+Completed 200 OK in 15272ms (Views: 15263.5ms | ActiveRecord: 0.0ms | Allocations: 17849)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 08:50:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 15.8ms | Allocations: 1856)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 500 Internal Server Error in 1460ms (ActiveRecord: 0.0ms | Allocations: 17702)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_rails_default with {:locale=>[:vi], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/pham/Desktop/chapter5/app/views"
+  * "/home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0/app/views"
+  * "/home/pham/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionmailbox-6.0.0/app/views"
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
+     7:     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+     8:     <%= render "layouts/rails_default" %>
+     9:     <%= render "layouts/shim" %>
+    10:   </head>
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:01:38 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 14.3ms | Allocations: 1857)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 96)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 12.5ms | Allocations: 164)
+Completed 200 OK in 3339ms (Views: 3333.1ms | ActiveRecord: 0.0ms | Allocations: 1380086)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:03:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 44.1ms | Allocations: 1607)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 2596ms (Views: 2593.3ms | ActiveRecord: 0.0ms | Allocations: 1377489)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:16:43 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:17:20 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2207)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 164)
+Completed 200 OK in 1611ms (Views: 1609.1ms | ActiveRecord: 0.0ms | Allocations: 18176)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-10-07 09:17:24 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 71.8ms | Allocations: 1881)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 1600ms (Views: 1585.2ms | ActiveRecord: 0.0ms | Allocations: 16069)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:17:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 18.7ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 1334ms (Views: 1329.8ms | ActiveRecord: 0.0ms | Allocations: 15622)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:18:57 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1856)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 164)
+Completed 200 OK in 1585ms (Views: 1579.2ms | ActiveRecord: 0.0ms | Allocations: 17760)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:19:00 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1608)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 1462ms (Views: 1459.7ms | ActiveRecord: 0.0ms | Allocations: 15626)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:19:38 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 14.3ms | Allocations: 1859)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 164)
+Completed 200 OK in 1588ms (Views: 1583.8ms | ActiveRecord: 0.0ms | Allocations: 17764)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-10-07 09:19:42 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1112)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 2002)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(".help") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".help") %></h1>
+<p>
+  <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+  <p></p>
+  <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+</p>
+
+):
+1:    <% provide :title, t(".help") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".help") %></h1>
+5:    <p>
+6:      <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+7:      <p></p>
+8:      <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+9:    </p>
+  
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/static_pages/help" for ::1 at 2019-10-07 09:20:05 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1112)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 2609)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(".help") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".help") %></h1>
+<p>
+  <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+  <p></p>
+  <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+</p>
+
+):
+1:    <% provide :title, t(".help") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".help") %></h1>
+5:    <p>
+6:      <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+7:      <p></p>
+8:      <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+9:    </p>
+  
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:20:10 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1857)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 1264ms (Views: 1260.5ms | ActiveRecord: 0.0ms | Allocations: 17154)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:20:15 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1607)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 1636ms (Views: 1631.9ms | ActiveRecord: 0.0ms | Allocations: 15623)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-10-07 09:20:18 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1097)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1850)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(".help") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".help") %></h1>
+<p>
+  <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+  <p></p>
+  <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+</p>
+
+):
+1:    <% provide :title, t(".help") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".help") %></h1>
+5:    <p>
+6:      <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+7:      <p></p>
+8:      <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+9:    </p>
+  
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:20:49 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1857)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 164)
+Completed 200 OK in 1537ms (Views: 1533.6ms | ActiveRecord: 0.0ms | Allocations: 17765)
+
+
+Started GET "/static_pages/about" for ::1 at 2019-10-07 09:20:51 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1717)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 1605ms (Views: 1599.1ms | ActiveRecord: 0.0ms | Allocations: 15896)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-10-07 09:21:35 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1112)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2010)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(".help") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".help") %></h1>
+<p>
+  <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+  <p></p>
+  <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+</p>
+
+):
+1:    <% provide :title, t(".help") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".help") %></h1>
+5:    <p>
+6:      <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+7:      <p></p>
+8:      <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+9:    </p>
+  
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:22:36 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1857)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 164)
+Completed 200 OK in 1537ms (Views: 1532.7ms | ActiveRecord: 0.0ms | Allocations: 17773)
+
+
+Started GET "/static_pages/contact" for ::1 at 2019-10-07 09:22:38 +0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 5.6ms | Allocations: 592)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 1562ms (Views: 1556.8ms | ActiveRecord: 0.0ms | Allocations: 14863)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:23:57 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1958)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 1446ms (Views: 1445.0ms | ActiveRecord: 0.0ms | Allocations: 16326)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:24:12 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1856)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 164)
+Completed 200 OK in 1666ms (Views: 1664.0ms | ActiveRecord: 0.0ms | Allocations: 17757)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-10-07 09:24:15 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1112)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2006)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(".help") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".help") %></h1>
+<p>
+  <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+  <p></p>
+  <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+</p>
+
+):
+1:    <% provide :title, t(".help") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".help") %></h1>
+5:    <p>
+6:      <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+7:      <p></p>
+8:      <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+9:    </p>
+  
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/static_pages/help" for ::1 at 2019-10-07 09:28:43 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1112)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 2615)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(".help") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".help") %></h1>
+<p>
+  <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+  <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+</p>
+
+):
+1:    <% provide :title, t(".help") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".help") %></h1>
+5:    <p>
+6:      <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+7:      <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+8:    </p>
+  
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:29:55 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1857)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 164)
+Completed 200 OK in 1266ms (Views: 1261.2ms | ActiveRecord: 0.0ms | Allocations: 17763)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:29:58 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1607)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 1541ms (Views: 1536.1ms | ActiveRecord: 0.0ms | Allocations: 15621)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-10-07 09:30:01 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1111)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 2007)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(".help") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".help") %></h1>
+<p>
+  <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+  <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+</p>
+
+):
+1:    <% provide :title, t(".help") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".help") %></h1>
+5:    <p>
+6:      <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+7:      <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+8:    </p>
+  
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/static_pages/about" for ::1 at 2019-10-07 09:30:08 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1737)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 1511ms (Views: 1505.4ms | ActiveRecord: 0.0ms | Allocations: 15919)
+
+
+Started GET "/static_pages/contact" for ::1 at 2019-10-07 09:30:14 +0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 3.9ms | Allocations: 548)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 1600ms (Views: 1594.6ms | ActiveRecord: 0.0ms | Allocations: 14815)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-10-07 09:31:44 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1096)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 1849)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide :title, t(".help") %>
+<%= link_to t(".en"), locale: "en" %>
+<%= link_to t(".vi"), locale: "vi" %>
+<h1><%= t(".help") %></h1>
+<p>
+  <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+  <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+</p>
+
+):
+1:    <% provide :title, t(".help") %>
+2:    <%= link_to t(".en"), locale: "en" %>
+3:    <%= link_to t(".vi"), locale: "vi" %>
+4:    <h1><%= t(".help") %></h1>
+5:    <p>
+6:      <%= t(".pagehelp") %> <%= link_to t(".rails tutorial", Settings.help %>
+7:      <%= t(".apphelp") %> <%= link_to t(".rails book"), Settings.book %>
+8:    </p>
+  
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/help.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/static_pages/help" for ::1 at 2019-10-07 09:32:17 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 9.5ms | Allocations: 693)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 164)
+Completed 200 OK in 1573ms (Views: 1561.7ms | ActiveRecord: 0.0ms | Allocations: 16715)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 09:32:36 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1856)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 1243ms (Views: 1240.5ms | ActiveRecord: 0.0ms | Allocations: 16036)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-10-07 09:32:41 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 5.2ms | Allocations: 394)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 1654ms (Views: 1649.7ms | ActiveRecord: 0.0ms | Allocations: 14518)
+
+
+Started GET "/en/static_pages/help" for ::1 at 2019-10-07 09:32:44 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.2ms | Allocations: 398)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 1486ms (Views: 1483.6ms | ActiveRecord: 0.0ms | Allocations: 15403)
+
+
+Started GET "/vi/static_pages/help" for ::1 at 2019-10-07 09:32:49 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.1ms | Allocations: 394)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 1567ms (Views: 1562.1ms | ActiveRecord: 0.0ms | Allocations: 14519)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-10-07 09:32:53 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 1573ms (Views: 1569.4ms | ActiveRecord: 0.0ms | Allocations: 15613)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/vi/static_pages/contact" for ::1 at 2019-10-07 09:52:13 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 3.6ms | Allocations: 872)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 12.2ms | Allocations: 233)
+  Rendered layouts/_footer.html.erb (Duration: 8.9ms | Allocations: 164)
+Completed 200 OK in 7924ms (Views: 7921.7ms | ActiveRecord: 0.0ms | Allocations: 27138)
+
+
+Started GET "/en/static_pages/contact" for ::1 at 2019-10-07 09:52:26 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 3.1ms | Allocations: 348)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 1914ms (Views: 1907.5ms | ActiveRecord: 0.0ms | Allocations: 16225)
+
+
+Started GET "/vi/static_pages/contact" for ::1 at 2019-10-07 09:52:30 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 0.6ms | Allocations: 341)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 1667ms (Views: 1664.3ms | ActiveRecord: 0.0ms | Allocations: 15297)
+
+
+Started GET "/vi/static_pages/home" for ::1 at 2019-10-07 09:52:35 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 28.2ms | Allocations: 1893)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 29)
+Completed 200 OK in 1766ms (Views: 1761.5ms | ActiveRecord: 0.0ms | Allocations: 16885)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/vi/static_pages/home" for ::1 at 2019-10-07 10:13:08 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 163.2ms | Allocations: 6154)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 3.1ms | Allocations: 774)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 222)
+Completed 200 OK in 1867ms (Views: 1864.0ms | ActiveRecord: 0.0ms | Allocations: 23545)
+
+
+Started GET "/vi" for ::1 at 2019-10-07 10:13:15 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1605)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 581)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 77)
+Completed 200 OK in 1602ms (Views: 1598.9ms | ActiveRecord: 0.0ms | Allocations: 17049)
+
+
+Started GET "/en" for ::1 at 2019-10-07 10:13:19 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 581)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 77)
+Completed 200 OK in 1582ms (Views: 1577.8ms | ActiveRecord: 0.0ms | Allocations: 17906)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/en" for ::1 at 2019-10-07 10:14:21 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 14.2ms | Allocations: 5863)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 129)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 77)
+Completed 200 OK in 2195ms (Views: 2193.3ms | ActiveRecord: 0.0ms | Allocations: 21040)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/vi" for ::1 at 2019-10-07 10:14:28 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 129)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 77)
+Completed 200 OK in 1842ms (Views: 1837.4ms | ActiveRecord: 0.0ms | Allocations: 16579)
+
+
+Started GET "/en" for ::1 at 2019-10-07 10:14:32 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 15.7ms | Allocations: 1600)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 129)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 77)
+Completed 200 OK in 1576ms (Views: 1568.6ms | ActiveRecord: 0.0ms | Allocations: 16581)
+
+
+Started GET "/en" for ::1 at 2019-10-07 10:15:46 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.7ms | Allocations: 1599)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 129)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 77)
+Completed 200 OK in 3357ms (Views: 3352.5ms | ActiveRecord: 0.0ms | Allocations: 1379426)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:20:06 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 21.2ms | Allocations: 2214)
+[Webpacker] Compiling…
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:20:11 +0700
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 302)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 212)
+Completed 200 OK in 6733ms (Views: 6731.2ms | ActiveRecord: 0.0ms | Allocations: 19997)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1965)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 129)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 77)
+Completed 200 OK in 1687ms (Views: 1685.6ms | ActiveRecord: 0.0ms | Allocations: 17265)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:20:25 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.8ms | Allocations: 1599)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 129)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 77)
+Completed 200 OK in 1710ms (Views: 1705.2ms | ActiveRecord: 0.0ms | Allocations: 16540)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-10-07 10:20:27 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 15.1ms | Allocations: 638)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 129)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 77)
+Completed 200 OK in 1698ms (Views: 1686.7ms | ActiveRecord: 0.0ms | Allocations: 15830)
+
+
+Started GET "/static_pages/contact" for ::1 at 2019-10-07 10:20:31 +0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 18.3ms | Allocations: 549)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 129)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 77)
+Completed 200 OK in 1604ms (Views: 1596.8ms | ActiveRecord: 0.0ms | Allocations: 15750)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:20:35 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1599)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 129)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 77)
+Completed 200 OK in 1579ms (Views: 1574.2ms | ActiveRecord: 0.0ms | Allocations: 16542)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:24:34 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.0ms | Allocations: 6134)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.7ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 329)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 212)
+Completed 200 OK in 1612ms (Views: 1610.2ms | ActiveRecord: 0.0ms | Allocations: 22944)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:33:05 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 33.0ms | Allocations: 6216)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.7ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 3.0ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 1.7ms | Allocations: 214)
+Completed 200 OK in 1954ms (Views: 1950.9ms | ActiveRecord: 0.0ms | Allocations: 23004)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:35:52 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 19.7ms | Allocations: 1850)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 1066)
+Completed 500 Internal Server Error in 1686ms (ActiveRecord: 0.0ms | Allocations: 19437)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <footer class="footer">
+  <small>
+    The <a href="https://www.railstutorial.org/"> <%= t(."Ruby on Rails Tutorial") </a>
+    by <a href="http://www.michaelhartl.com/"> <%= t(."Michael Hartl" %></a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), "about" %></li>
+      <li><%= link_to t(".contact"), "contact" %></li>
+      <li><a href="http://news.railstutorial.org/"> <%= t.("news) %> </a></li>
+    </ul>
+  </nav>
+</footer>
+
+):
+1:    <footer class="footer">
+2:      <small>
+3:        The <a href="https://www.railstutorial.org/"> <%= t(."Ruby on Rails Tutorial") </a>
+4:        by <a href="http://www.michaelhartl.com/"> <%= t(."Michael Hartl" %></a>
+5:      </small>
+6:      <nav>
+7:        <ul>
+8:          <li><%= link_to t(".about"), "about" %></li>
+9:          <li><%= link_to t(".contact"), "contact" %></li>
+10:          <li><a href="http://news.railstutorial.org/"> <%= t.("news) %> </a></li>
+11:        </ul>
+12:      </nav>
+13:    </footer>
+  
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected tCONSTANT, expecting keyword_end
+app/views/layouts/_footer.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: unknown regexp option - w
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected tCONSTANT, expecting keyword_end
+app/views/layouts/_footer.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: unknown regexp option - w
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected tCONSTANT, expecting keyword_end
+app/views/layouts/_footer.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: unknown regexp option - w
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected tCONSTANT, expecting keyword_end
+app/views/layouts/_footer.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: unknown regexp option - w
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected tCONSTANT, expecting keyword_end
+app/views/layouts/_footer.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: unknown regexp option - w
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected tCONSTANT, expecting keyword_end
+app/views/layouts/_footer.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/_footer.html.erb:10: unknown regexp option - w
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/application.html.erb:16
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:36:29 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 20.2ms | Allocations: 1851)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 1030)
+Completed 500 Internal Server Error in 1776ms (ActiveRecord: 0.0ms | Allocations: 19414)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <footer class="footer">
+  <small>
+    The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), "about" %></li>
+      <li><%= link_to t(".contact"), "contact" %></li>
+      <li><a href="http://news.railstutorial.org/"> <%= t.("news) %> </a></li>
+    </ul>
+  </nav>
+</footer>
+
+):
+1:    <footer class="footer">
+2:      <small>
+3:        The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+4:        by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+5:      </small>
+6:      <nav>
+7:        <ul>
+8:          <li><%= link_to t(".about"), "about" %></li>
+9:          <li><%= link_to t(".contact"), "contact" %></li>
+10:          <li><a href="http://news.railstutorial.org/"> <%= t.("news) %> </a></li>
+11:        </ul>
+12:      </nav>
+13:    </footer>
+  
+app/views/layouts/_footer.html.erb:16: unterminated string meets end of file
+app/views/layouts/_footer.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_footer.html.erb:16: unterminated string meets end of file
+app/views/layouts/_footer.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_footer.html.erb:16: unterminated string meets end of file
+app/views/layouts/_footer.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_footer.html.erb:16: unterminated string meets end of file
+app/views/layouts/_footer.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_footer.html.erb:16: unterminated string meets end of file
+app/views/layouts/_footer.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_footer.html.erb:16: unterminated string meets end of file
+app/views/layouts/_footer.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:16
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:36:55 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1851)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 212)
+Completed 200 OK in 1668ms (Views: 1663.0ms | ActiveRecord: 0.0ms | Allocations: 18615)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:48:30 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1850)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 1033)
+Completed 500 Internal Server Error in 1650ms (ActiveRecord: 0.0ms | Allocations: 19430)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <footer class="footer">
+  <small>
+    The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), "about" %></li>
+      <li><%= link_to t(".contact"), "contact" %></li>
+      <li><%= link_to t(".news"), Settings.news) %></li>
+    </ul>
+  </nav>
+</footer>
+
+):
+1:    <footer class="footer">
+2:      <small>
+3:        The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+4:        by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+5:      </small>
+6:      <nav>
+7:        <ul>
+8:          <li><%= link_to t(".about"), "about" %></li>
+9:          <li><%= link_to t(".contact"), "contact" %></li>
+10:          <li><%= link_to t(".news"), Settings.news) %></li>
+11:        </ul>
+12:      </nav>
+13:    </footer>
+  
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:10: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/application.html.erb:16
+Started GET "/static_pages/home" for ::1 at 2019-10-07 10:50:01 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 20.8ms | Allocations: 1851)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 279)
+Completed 200 OK in 1654ms (Views: 1647.0ms | ActiveRecord: 0.0ms | Allocations: 18702)
+
+
+Started GET "/vi" for ::1 at 2019-10-07 10:50:07 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1605)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 109)
+Completed 200 OK in 1673ms (Views: 1666.2ms | ActiveRecord: 0.0ms | Allocations: 16618)
+
+
+Started GET "/en" for ::1 at 2019-10-07 10:50:10 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 109)
+Completed 200 OK in 1647ms (Views: 1640.9ms | ActiveRecord: 0.0ms | Allocations: 17486)
+
+
+Started GET "/vi" for ::1 at 2019-10-07 10:50:23 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 12.7ms | Allocations: 1600)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 109)
+Completed 200 OK in 1711ms (Views: 1705.8ms | ActiveRecord: 0.0ms | Allocations: 16615)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/vi" for ::1 at 2019-10-07 11:04:43 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 14.1ms | Allocations: 6259)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 1088)
+Completed 500 Internal Server Error in 1585ms (ActiveRecord: 0.0ms | Allocations: 23963)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <footer class="footer">
+  <small>
+    <%= t(."the") %><%= link_to t(."Ruby on Rails Tutorial"), Settings.ror %>
+    <%= t(."by") %><%= link_to t(."Michael Hartl"), Settings.michaelhartl %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), "about" %></li>
+      <li><%= link_to t(".contact"), "contact" %></li>
+      <li><%= link_to t(".news"), Settings.news %></li>
+    </ul>
+  </nav>
+</footer>
+
+):
+1:    <footer class="footer">
+2:      <small>
+3:        <%= t(."the") %><%= link_to t(."Ruby on Rails Tutorial"), Settings.ror %>
+4:        <%= t(."by") %><%= link_to t(."Michael Hartl"), Settings.michaelhartl %>
+5:      </small>
+6:      <nav>
+7:        <ul>
+8:          <li><%= link_to t(".about"), "about" %></li>
+9:          <li><%= link_to t(".contact"), "contact" %></li>
+10:          <li><%= link_to t(".news"), Settings.news %></li>
+11:        </ul>
+12:      </nav>
+13:    </footer>
+  
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/application.html.erb:16
+Started GET "/vi" for ::1 at 2019-10-07 11:06:36 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 16.8ms | Allocations: 1851)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 1088)
+Completed 500 Internal Server Error in 1729ms (ActiveRecord: 0.0ms | Allocations: 19525)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <footer class="footer">
+  <small>
+    <%= t(."the") %><%= link_to t(."Ruby on Rails Tutorial"), Settings.ror %>
+    <%= t(."by") %><%= link_to t(."Michael Hartl"), Settings.michaelhartl %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), "about" %></li>
+      <li><%= link_to t(".contact"), "contact" %></li>
+      <li><%= link_to t(".news"), Settings.news %></li>
+    </ul>
+  </nav>
+</footer>
+
+):
+1:    <footer class="footer">
+2:      <small>
+3:        <%= t(."the") %><%= link_to t(."Ruby on Rails Tutorial"), Settings.ror %>
+4:        <%= t(."by") %><%= link_to t(."Michael Hartl"), Settings.michaelhartl %>
+5:      </small>
+6:      <nav>
+7:        <ul>
+8:          <li><%= link_to t(".about"), "about" %></li>
+9:          <li><%= link_to t(".contact"), "contact" %></li>
+10:          <li><%= link_to t(".news"), Settings.news %></li>
+11:        </ul>
+12:      </nav>
+13:    </footer>
+  
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected '.', expecting ')'
+app/views/layouts/_footer.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/application.html.erb:16
+Started GET "/vi" for ::1 at 2019-10-07 11:10:04 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 18.5ms | Allocations: 1851)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 900)
+Completed 200 OK in 1752ms (Views: 1742.8ms | ActiveRecord: 0.0ms | Allocations: 19352)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/vi" for ::1 at 2019-10-07 11:12:25 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.9ms | Allocations: 5740)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 881)
+Completed 200 OK in 1601ms (Views: 1597.2ms | ActiveRecord: 0.0ms | Allocations: 23243)
+
+
+Started GET "/vi" for ::1 at 2019-10-07 11:12:56 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.4ms | Allocations: 5520)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 198)
+Completed 200 OK in 2227ms (Views: 2224.0ms | ActiveRecord: 0.0ms | Allocations: 20834)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/en" for ::1 at 2019-10-07 11:13:05 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 14.5ms | Allocations: 1601)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 198)
+Completed 200 OK in 1681ms (Views: 1672.8ms | ActiveRecord: 0.0ms | Allocations: 17600)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 11:28:45 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 60.6ms | Allocations: 1599)
+[Webpacker] Compiling…
+Started GET "/static_pages/home" for ::1 at 2019-10-07 11:28:49 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1599)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 1.6ms | Allocations: 197)
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 20221ms (Views: 20218.3ms | ActiveRecord: 0.0ms | Allocations: 34632)
+
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 2.2ms | Allocations: 196)
+Completed 200 OK in 15328ms (Views: 15324.9ms | ActiveRecord: 0.0ms | Allocations: 18403)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-10-07 11:29:09 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.6ms | Allocations: 638)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 197)
+Completed 200 OK in 1616ms (Views: 1613.7ms | ActiveRecord: 0.0ms | Allocations: 16013)
+
+
+Started GET "/static_pages/home" for ::1 at 2019-10-07 11:29:13 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 12.7ms | Allocations: 1599)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 197)
+Completed 200 OK in 1520ms (Views: 1515.4ms | ActiveRecord: 0.0ms | Allocations: 16715)
+
+
+Started GET "/static_pages/help" for ::1 at 2019-10-07 11:29:17 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.4ms | Allocations: 394)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 197)
+Completed 200 OK in 1679ms (Views: 1675.3ms | ActiveRecord: 0.0ms | Allocations: 15622)
+
+
+Started GET "/static_pages/contact" for ::1 at 2019-10-07 11:29:22 +0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 1.4ms | Allocations: 549)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 197)
+Completed 200 OK in 1498ms (Views: 1495.8ms | ActiveRecord: 0.0ms | Allocations: 15929)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/static_pages/about" for ::1 at 2019-10-07 11:30:36 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1740)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 196)
+Completed 200 OK in 1644ms (Views: 1642.0ms | ActiveRecord: 0.0ms | Allocations: 17034)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/static_pages/about" for ::1 at 2019-10-07 11:43:33 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/about"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/static_pages/home" for ::1 at 2019-10-07 11:43:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/static_pages/home" for ::1 at 2019-10-07 11:45:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-07 11:47:13 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 197.1ms | Allocations: 6224)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 8.4ms | Allocations: 96)
+  Rendered layouts/_header.html.erb (Duration: 4.7ms | Allocations: 768)
+  Rendered layouts/_footer.html.erb (Duration: 2.4ms | Allocations: 405)
+Completed 200 OK in 10920ms (Views: 10917.7ms | ActiveRecord: 0.0ms | Allocations: 1385695)
+
+
+Started GET "/help" for ::1 at 2019-10-07 11:47:50 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 5.9ms | Allocations: 630)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 584)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 197)
+Completed 200 OK in 2123ms (Views: 2117.1ms | ActiveRecord: 0.0ms | Allocations: 15659)
+
+
+Started GET "/home" for ::1 at 2019-10-07 11:47:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1591)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 584)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 197)
+Completed 200 OK in 1804ms (Views: 1802.6ms | ActiveRecord: 0.0ms | Allocations: 16317)
+
+
+Started GET "/about" for ::1 at 2019-10-07 11:48:04 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1749)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 2.3ms | Allocations: 584)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 196)
+Completed 200 OK in 1955ms (Views: 1952.9ms | ActiveRecord: 0.0ms | Allocations: 16642)
+
+
+Started GET "/contact" for ::1 at 2019-10-07 11:48:09 +0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 6.4ms | Allocations: 527)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 1.8ms | Allocations: 584)
+  Rendered layouts/_footer.html.erb (Duration: 1.5ms | Allocations: 197)
+Completed 200 OK in 1965ms (Views: 1947.8ms | ActiveRecord: 0.0ms | Allocations: 15505)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter5/config/environment.rb:2)
+Started GET "/" for ::1 at 2019-10-08 08:17:42 +0700
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1168.8ms | Allocations: 1447581)
+[Webpacker] Compiling…
+Started GET "/static_pages/home" for ::1 at 2019-10-08 08:17:48 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/home"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 28.5ms | Allocations: 94)
+  Rendered layouts/_header.html.erb (Duration: 2.7ms | Allocations: 811)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 477)
+Completed 200 OK in 8939ms (Views: 8897.3ms | ActiveRecord: 0.0ms | Allocations: 1531364)
+
+
+Started GET "/home" for ::1 at 2019-10-08 08:17:57 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1603)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 584)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 197)
+Completed 200 OK in 1459ms (Views: 1454.1ms | ActiveRecord: 0.0ms | Allocations: 16350)
+
+
+Started GET "/?locale=vi" for ::1 at 2019-10-08 08:18:04 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 12.7ms | Allocations: 1596)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 584)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 197)
+Completed 200 OK in 1591ms (Views: 1586.4ms | ActiveRecord: 0.0ms | Allocations: 16324)
+
+
+Started GET "/?locale=en" for ::1 at 2019-10-08 08:18:08 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1596)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 584)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 198)
+Completed 200 OK in 1514ms (Views: 1509.9ms | ActiveRecord: 0.0ms | Allocations: 17205)
+
+
+Started GET "/?locale=vi" for ::1 at 2019-10-08 08:18:15 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1596)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 584)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 197)
+Completed 200 OK in 1609ms (Views: 1604.4ms | ActiveRecord: 0.0ms | Allocations: 16326)
+
+
+Started GET "/?locale=en" for ::1 at 2019-10-08 08:18:28 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1591)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 584)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 197)
+Completed 200 OK in 1551ms (Views: 1547.1ms | ActiveRecord: 0.0ms | Allocations: 16316)
+
+
+Started GET "/?locale=vi" for ::1 at 2019-10-08 08:21:08 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 89.2ms | Allocations: 6258)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 393)
+Completed 200 OK in 1553ms (Views: 1549.6ms | ActiveRecord: 0.0ms | Allocations: 22453)
+
+
+Started GET "/?locale=en" for ::1 at 2019-10-08 08:21:11 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1599)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 198)
+Completed 200 OK in 1544ms (Views: 1539.2ms | ActiveRecord: 0.0ms | Allocations: 16762)
+
+
+Started GET "/?locale=vi" for ::1 at 2019-10-08 08:21:17 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1591)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 197)
+Completed 200 OK in 1645ms (Views: 1640.4ms | ActiveRecord: 0.0ms | Allocations: 15891)
+
+
+Started GET "/?locale=en" for ::1 at 2019-10-08 08:21:20 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1591)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 197)
+Completed 200 OK in 1486ms (Views: 1482.0ms | ActiveRecord: 0.0ms | Allocations: 15885)
+
+
+Started GET "/?locale=vi" for ::1 at 2019-10-08 08:21:23 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1592)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 197)
+Completed 200 OK in 1582ms (Views: 1578.0ms | ActiveRecord: 0.0ms | Allocations: 15883)
+
+
+Started GET "/home" for ::1 at 2019-10-08 08:21:37 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 12.1ms | Allocations: 1591)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 197)
+Completed 200 OK in 1621ms (Views: 1615.2ms | ActiveRecord: 0.0ms | Allocations: 15881)
+
+
+Started GET "/help" for ::1 at 2019-10-08 08:21:43 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.7ms | Allocations: 690)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 197)
+Completed 200 OK in 1481ms (Views: 1475.2ms | ActiveRecord: 0.0ms | Allocations: 15244)
+
+
+Started GET "/contact" for ::1 at 2019-10-08 08:21:51 +0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 15.2ms | Allocations: 569)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 197)
+Completed 200 OK in 1573ms (Views: 1568.0ms | ActiveRecord: 0.0ms | Allocations: 15109)
+
+
+Started GET "/about" for ::1 at 2019-10-08 08:21:54 +0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1797)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 196)
+Completed 200 OK in 1612ms (Views: 1605.9ms | ActiveRecord: 0.0ms | Allocations: 16260)
+
+
+Started GET "/home" for ::1 at 2019-10-08 08:22:08 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1591)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 197)
+Completed 200 OK in 1579ms (Views: 1573.5ms | ActiveRecord: 0.0ms | Allocations: 15880)
+
+
+Started GET "/home" for ::1 at 2019-10-08 08:32:56 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2157)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 323)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 392)
+Completed 200 OK in 1540ms (Views: 1538.3ms | ActiveRecord: 0.0ms | Allocations: 18341)
+
+
+Started GET "/home_path" for ::1 at 2019-10-08 08:33:00 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home_path"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/help_path" for ::1 at 2019-10-08 08:33:05 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/help_path"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/help_path" for ::1 at 2019-10-08 08:33:17 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/help_path"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/help_path" for ::1 at 2019-10-08 08:33:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/help_path"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/home_path" for ::1 at 2019-10-08 08:33:59 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/home_path"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/home_path" for ::1 at 2019-10-08 08:34:03 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home_path"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/home" for ::1 at 2019-10-08 08:34:06 +0700
+  
+AbstractController::ActionNotFound (The action 'home_path' could not be found for StaticPagesController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/about" for ::1 at 2019-10-08 08:34:26 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1989)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 196)
+Completed 200 OK in 1446ms (Views: 1444.2ms | ActiveRecord: 0.0ms | Allocations: 16673)
+
+
+Started GET "/home_path" for ::1 at 2019-10-08 08:34:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home_path"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/home_path" for ::1 at 2019-10-08 08:44:45 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/home_path"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/home" for ::1 at 2019-10-08 08:44:57 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 16.1ms | Allocations: 6209)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 413)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 472)
+Completed 200 OK in 1551ms (Views: 1548.3ms | ActiveRecord: 0.0ms | Allocations: 22611)
+
+
+Started GET "/" for ::1 at 2019-10-08 08:45:04 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1593)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 240)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 275)
+Completed 200 OK in 1509ms (Views: 1503.9ms | ActiveRecord: 0.0ms | Allocations: 16102)
+
+
+Started GET "/?locale=vi" for ::1 at 2019-10-08 08:45:07 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1589)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 238)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 275)
+Completed 200 OK in 1581ms (Views: 1576.9ms | ActiveRecord: 0.0ms | Allocations: 16080)
+
+
+Started GET "/help?locale=vi" for ::1 at 2019-10-08 08:45:12 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 5.0ms | Allocations: 618)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 241)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 277)
+Completed 200 OK in 1493ms (Views: 1487.5ms | ActiveRecord: 0.0ms | Allocations: 15374)
+
+
+Started GET "/about?locale=vi" for ::1 at 2019-10-08 08:45:22 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1713)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 241)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 276)
+Completed 200 OK in 1638ms (Views: 1631.4ms | ActiveRecord: 0.0ms | Allocations: 16387)
+
+
+Started GET "/about?locale=en" for ::1 at 2019-10-08 08:45:33 +0700
+Processing by StaticPagesController#about as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 238)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 275)
+Completed 200 OK in 1611ms (Views: 1604.2ms | ActiveRecord: 0.0ms | Allocations: 16825)
+
+
+Started GET "/contact?locale=en" for ::1 at 2019-10-08 08:45:41 +0700
+Processing by StaticPagesController#contact as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 4.4ms | Allocations: 528)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 241)
+  Rendered layouts/_footer.html.erb (Duration: 1.9ms | Allocations: 277)
+Completed 200 OK in 1591ms (Views: 1584.4ms | ActiveRecord: 0.0ms | Allocations: 15286)
+
+
