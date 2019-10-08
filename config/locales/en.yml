@@ -44,3 +44,6 @@ en:
       home: Home
       help: Help
       login: Log in
+  user:
+    new:
+      user_new: User#new
