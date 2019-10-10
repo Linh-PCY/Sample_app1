@@ -10,3 +10,7 @@ ruby: http://rybyonrails.org/
 pcy: https://www.pinterest.com/phamtien2001/park-chanyeol-chibi/
 news: http://news.railstutorial.org/
 michaelhartl: http://www.michaelhartl.com/
+max50: 50
+max255: 255
+min6: 6
+regex_mail: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
