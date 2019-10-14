@@ -35,7 +35,7 @@ vi:
     footer:
       the_ruby_on_rails_tutorial: Hướng dẫn về Ruby on Rails
       michael_hartl: Michael Hartl
-      by: của
+      by: bởi
       about: Thông tin
       contact: Liên hệ
       news: Tin tức
@@ -44,6 +44,21 @@ vi:
       home: Trang chủ
       help: Trợ giúp
       login: Đăng nhập
-  user:
+  users:
     new:
-      user_new: Người dùng mới
+      en: Tiếng Anh
+      vi: Tiếng Việt
+      sign_up: Đăng ký
+      name: Họ và tên
+      email: Email
+      password: Mật khẩu
+      confirmation: Xác nhận mật khẩu
+      create_my_account: Tạo tài khoản
+    create:
+      welcome: Chào mừng bạn đến với Ứng dụng mẫu!
+      fail: Thông tin không hợp lệ
+    notfound: Không tìm thấy người dùng này
+  error:
+    one: 1 lỗi
+    other: "%{count} lỗi"
+  the_form_contains: Biểu mẫu có chứa
