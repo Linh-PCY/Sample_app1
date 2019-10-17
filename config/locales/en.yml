@@ -43,6 +43,11 @@ en:
       sample_app: Sample App
       home: Home
       help: Help
+      users: Users
+      account: Account
+      profile: Profile
+      settings: Settings
+      logout: Log out
       login: Log in
   users:
     new:
@@ -57,7 +62,17 @@ en:
     create:
       welcome: Welcome to the Sample App!
       fail: Invalid information
+      invalid: Invalid email/password combination
     notfound: User doesn't exist
+  sessions:
+    new:
+      en: English
+      vi: Vietnamese
+      login: Log in
+      email: Email
+      password: Password
+      new_user: New user?
+      sign_up_now: Sign up now!
   error:
     one: 1 error
     other: "%{count} errors"

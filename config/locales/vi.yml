@@ -43,6 +43,11 @@ vi:
       sample_app: Ứng dụng
       home: Trang chủ
       help: Trợ giúp
+      users: Người dùng
+      account: Tài khoản
+      profile: Hồ sơ
+      settings: Cài đặt
+      logout: Đăng xuất
       login: Đăng nhập
   users:
     new:
@@ -57,7 +62,17 @@ vi:
     create:
       welcome: Chào mừng bạn đến với Ứng dụng mẫu!
       fail: Thông tin không hợp lệ
+      invalid: Email hoặc mật khẩu không hợp lệ
     notfound: Không tìm thấy người dùng này
+  sessions:
+    new:
+      en: Tiếng Anh
+      vi: Tiếng Việt
+      login: Đăng nhập
+      email: Email
+      password: Mật khẩu
+      new_user: Người dùng mới?
+      sign_up_now: Đăng ký
   error:
     one: 1 lỗi
     other: "%{count} lỗi"
