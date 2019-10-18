@@ -16828,3 +16828,888 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.1ms | Allocations: 18002)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter9/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter9/config/environment.rb:2)
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRememberDigestToUsers (20191017035903)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_digest" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191017035903"]]
+  [1m[35m (75.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter9/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter9/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter9/config/environment.rb:2)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /home/pham/Desktop/chapter9/config/environment.rb:2)
+Started GET "/" for ::1 at 2019-10-18 08:05:31 +0700
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3868.9ms | Allocations: 2930304)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 94)
+  Rendered layouts/_header.html.erb (Duration: 3.6ms | Allocations: 751)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 588)
+Completed 200 OK in 3992ms (Views: 3958.5ms | ActiveRecord: 0.0ms | Allocations: 2955101)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 08:05:40 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 43.6ms | Allocations: 3173)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 288)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 273)
+Completed 200 OK in 81ms (Views: 75.0ms | ActiveRecord: 0.0ms | Allocations: 19376)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:05:43 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"B5tJCduLqqbPB4/UZGIxXAj2YiuItlrrkd1vqMij1nTNNDleMV8mBISzJoX4OahLhrvr36aWTm6n3qThwF33og==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 620ms (ActiveRecord: 2.4ms | Allocations: 124112)
+
+
+  
+NameError (undefined local variable or method `user_forget' for #<SessionsController:0x00007fa312c97400>
+Did you mean?  user_url):
+  
+app/helpers/sessions_helper.rb:29:in `forget'
+app/controllers/sessions_controller.rb:9:in `create'
+Started GET "/" for ::1 at 2019-10-18 08:06:30 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2291)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 329)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 313)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 18027)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 08:06:33 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1063)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 288)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 273)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 16792)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:06:34 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"y0Zaq2ivZQcDtYW/96UN5rgs6WYTsPalp8Hn/LCyx+YB6Sr8gnvppUgBLO5r/pTxNmFgkj2Q4iCRwiy1uEzmMA==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:42:in `forget'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42:in `forget'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:42:in `forget'
+Redirected to http://localhost:3000/vi/users/7
+Completed 302 Found in 344ms (ActiveRecord: 1.6ms | Allocations: 12451)
+
+
+Started GET "/vi/users/7" for ::1 at 2019-10-18 08:06:34 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"vi", "id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 200)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 3.0ms | Allocations: 1113)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 273)
+Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 0.4ms | Allocations: 17841)
+
+
+Started DELETE "/vi/logout" for ::1 at 2019-10-18 08:06:38 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PRacH7xNjxSJrnhNiJ1uGZHUIxf9hrZMlxRM8bSzujYAUHQKNHwPE6M0msxXl053LGQfMGJAE8bqFVKsAmYaQQ==", "locale"=>"vi"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:42:in `forget'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42:in `forget'
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:42:in `forget'
+Redirected to http://localhost:3000/vi
+Completed 302 Found in 45ms (ActiveRecord: 1.8ms | Allocations: 5304)
+
+
+Started GET "/vi" for ::1 at 2019-10-18 08:06:38 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1646)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 289)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 273)
+Completed 200 OK in 49ms (Views: 42.5ms | ActiveRecord: 0.0ms | Allocations: 17099)
+
+
+Started GET "/vi/signup" for ::1 at 2019-10-18 08:06:40 +0700
+Processing by UsersController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 2.9ms | Allocations: 226)
+  Rendered users/new.html.erb within layouts/application (Duration: 17.0ms | Allocations: 1866)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 292)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 273)
+Completed 200 OK in 75ms (Views: 66.0ms | ActiveRecord: 0.0ms | Allocations: 17601)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 08:06:44 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1062)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 288)
+  Rendered layouts/_footer.html.erb (Duration: 1.7ms | Allocations: 273)
+Completed 200 OK in 91ms (Views: 83.6ms | ActiveRecord: 0.0ms | Allocations: 16629)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:07:30 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"1HD9hfihOfMPuJQlR1oH2egfuc/UbVnGyK62+ReILcce343SEnW1UUQMPXTbAZ7OZlIwO/pNTUP+rX2wH3YMEQ==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:33:in `remember'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `remember'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:33:in `remember'
+Redirected to http://localhost:3000/vi/users/7
+Completed 302 Found in 709ms (ActiveRecord: 1.0ms | Allocations: 5621)
+
+
+Started GET "/vi/users/7" for ::1 at 2019-10-18 08:07:30 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"vi", "id"=>"7"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 47)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.1ms | Allocations: 1062)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 271)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.2ms | Allocations: 16948)
+
+
+Started GET "/" for ::1 at 2019-10-18 08:07:48 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1642)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:16:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 15.1ms | Allocations: 4149)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.1ms | Allocations: 20379)
+
+
+  
+ActionView::Template::Error (undefined method `aithenticated?' for #<User:0x00007fa312aa6fd8>
+Did you mean?  authenticated?):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to t(".home"), root_path %></li>
+     7:         <li><%= link_to t(".help"), help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to t(".users"), "#" %></li>
+    10:           <li class="dropdown">
+    11:             <%= link_to "#", class: "dropdown-toggle", data: {toggle: "dropdown"} do %>
+  
+app/helpers/sessions_helper.rb:17:in `current_user'
+app/helpers/sessions_helper.rb:25:in `logged_in?'
+app/views/layouts/_header.html.erb:8
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2019-10-18 08:08:31 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2093)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:16:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 15.8ms | Allocations: 7195)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 313)
+Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 1.6ms | Allocations: 24627)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 08:08:33 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1063)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:16:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 4.8ms | Allocations: 911)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 273)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.5ms | Allocations: 17443)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:08:45 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"h9AW+aIUssGlolDgbnUJ04jdlwslFFhjDEN5EzA/E2C//wDszbUrpo6zEaC7FQGgr+Ylgd9+I3TgI/ZNQLJd3A==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:33:in `remember'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `remember'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:33:in `remember'
+Redirected to http://localhost:3000/vi/users/7
+Completed 302 Found in 657ms (ActiveRecord: 0.5ms | Allocations: 6066)
+
+
+Started GET "/vi/users/7" for ::1 at 2019-10-18 08:08:46 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"vi", "id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 47)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 1090)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 273)
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.3ms | Allocations: 17132)
+
+
+Started GET "/" for ::1 at 2019-10-18 08:08:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1634)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:16:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.8ms | Allocations: 896)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 271)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.1ms | Allocations: 17637)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 08:09:07 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1051)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:16:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.8ms | Allocations: 896)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 271)
+Completed 200 OK in 63ms (Views: 59.1ms | ActiveRecord: 0.2ms | Allocations: 17251)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:09:15 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"si6q9p499xvnT86EWHeKcZn+RO5Vjtwfq42zogmIBKqqqg7dFoR7rxVrrf70Exjo/ajPnU+V3bs85h8rI0/vHg==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:33:in `remember'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `remember'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:33:in `remember'
+Redirected to http://localhost:3000/vi/users/7
+Completed 302 Found in 655ms (ActiveRecord: 0.5ms | Allocations: 5638)
+
+
+Started GET "/vi/users/7" for ::1 at 2019-10-18 08:09:16 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"vi", "id"=>"7"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 46)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 1059)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 271)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 16940)
+
+
+Started GET "/" for ::1 at 2019-10-18 08:09:37 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1634)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:16:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 896)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 271)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.1ms | Allocations: 17636)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 08:09:39 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1052)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:16:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 896)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 271)
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 0.1ms | Allocations: 17256)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:09:49 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"tuY7HXbtnf1B25a4GP6J4j/Rv+bauK91wvFVUnG+1gmSIztbzFxd289ZePlSpC7dc4FqsZe+P5qzqVvapV5VvQ==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:33:in `remember'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `remember'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:33:in `remember'
+Redirected to http://localhost:3000/vi/users/7
+Completed 302 Found in 673ms (ActiveRecord: 0.5ms | Allocations: 5651)
+
+
+Started GET "/vi/users/7" for ::1 at 2019-10-18 08:09:49 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"vi", "id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 46)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 1059)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 271)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.3ms | Allocations: 16941)
+
+
+Started GET "/" for ::1 at 2019-10-18 08:09:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1634)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 1035)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 271)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.1ms | Allocations: 17860)
+
+
+Started GET "/" for ::1 at 2019-10-18 08:11:08 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1635)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 1032)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 271)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.1ms | Allocations: 17853)
+
+
+Started GET "/vi/users/7" for ::1 at 2019-10-18 08:11:32 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"vi", "id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 46)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.2ms | Allocations: 1059)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 271)
+Completed 200 OK in 39ms (Views: 32.8ms | ActiveRecord: 0.4ms | Allocations: 16950)
+
+
+Started GET "/vi/users/7" for ::1 at 2019-10-18 08:12:28 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"vi", "id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 46)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 5.5ms | Allocations: 1059)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 271)
+Completed 200 OK in 72ms (Views: 61.4ms | ActiveRecord: 0.8ms | Allocations: 16947)
+
+
+Started GET "/vi" for ::1 at 2019-10-18 08:12:31 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1634)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.9ms | Allocations: 1032)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 271)
+Completed 200 OK in 63ms (Views: 57.9ms | ActiveRecord: 0.2ms | Allocations: 17857)
+
+
+Started DELETE "/vi/logout" for ::1 at 2019-10-18 08:12:39 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uLjFeL2LTsOrYjzdHJXFgn11Mqk63XDjgmP2Isfqs9Pb3+9+J9nEA2as1ikon7pxlqepxgCyATzWTloozfnSaw==", "locale"=>"vi"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:42:in `forget'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42:in `forget'
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:42:in `forget'
+Redirected to http://localhost:3000/vi
+Completed 302 Found in 41ms (ActiveRecord: 1.7ms | Allocations: 5330)
+
+
+Started GET "/vi" for ::1 at 2019-10-18 08:12:39 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1634)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 283)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 271)
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 17085)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 08:12:41 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1051)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 283)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 271)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 16612)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:12:48 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"3RoV/WTxAnxADLgsxb+eT4DCSW8hcIp/gtQqiUa5jNb53xW73kDCWs6OVm2P5TlwzJKcOGx2GpDzjCQBklkPYg==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1063)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 2.3ms | Allocations: 283)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 271)
+Completed 200 OK in 417ms (Views: 19.1ms | ActiveRecord: 0.5ms | Allocations: 17387)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:15:18 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"FBmS4FoyxHtXrjsioBODMDDA8FJMVcLF4rdbvvKyvIR3frjmwGBOu5pg0daUGfzD2xJrPXY6sxq2mve0+KHdPA==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1526)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 327)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 313)
+Completed 200 OK in 354ms (Views: 22.3ms | ActiveRecord: 1.8ms | Allocations: 24352)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:18:14 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Xbu+SMCGeWo07p/GF+/KORzBYBdreODzbALXJW5moQ8+3JROWtTzqvkgdTIj5bXK9xP7eFEXkSw4L3svZHXAtw==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1527)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 327)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 314)
+Completed 200 OK in 358ms (Views: 25.0ms | ActiveRecord: 1.0ms | Allocations: 29321)
+
+
+Started GET "/" for ::1 at 2019-10-18 08:18:23 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1645)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 289)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 273)
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 17227)
+
+
+Started GET "/" for ::1 at 2019-10-18 08:18:27 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1634)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 283)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 271)
+Completed 200 OK in 74ms (Views: 68.5ms | ActiveRecord: 0.0ms | Allocations: 17068)
+
+
+Started GET "/" for ::1 at 2019-10-18 08:19:03 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2093)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 329)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 313)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 17716)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 08:19:05 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1059)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 273)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 16784)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:19:11 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"bCBmMER3ncrcOGI2//VYAmIbkqUDbTUX3snwgNWIT9+a5ZjBkiah7H4pDxrJUL7XkONPazUYKHunquyM1qAQnQ==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1063)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 283)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 271)
+Completed 200 OK in 429ms (Views: 19.2ms | ActiveRecord: 6.3ms | Allocations: 23574)
+
+
+Started GET "/" for ::1 at 2019-10-18 08:21:26 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.9ms | Allocations: 7044)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 329)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 314)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 22753)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 08:21:28 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1060)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 273)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms | Allocations: 16794)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 08:21:32 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"qNRXJ6vsnm/9cFvhqpdHEYgfISq72UisRbINZq/501heEanWfb2iSV9hNs2cMqHEeuf85I2sVcA80RFqrNGMGg==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1063)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 283)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 271)
+Completed 200 OK in 393ms (Views: 18.3ms | ActiveRecord: 5.1ms | Allocations: 23607)
+
+
+Started GET "/" for ::1 at 2019-10-18 08:28:26 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2092)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 329)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 313)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 17803)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 08:28:28 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1059)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 273)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 16786)
+
+
+Started GET "/" for ::1 at 2019-10-18 09:25:58 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 67.9ms | Allocations: 2092)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 2.7ms | Allocations: 329)
+  Rendered layouts/_footer.html.erb (Duration: 1.5ms | Allocations: 313)
+Completed 200 OK in 3785ms (Views: 3743.0ms | ActiveRecord: 0.0ms | Allocations: 1401103)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 09:26:14 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1059)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 288)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 273)
+Completed 200 OK in 69ms (Views: 62.9ms | ActiveRecord: 0.0ms | Allocations: 16826)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 09:26:20 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"qDKwuk9Ct9kHBUZEOgefI43NZdh2Dtkwuu1rGevFUMJe905LmROL/6UUK2gMonn2fzW4FkB7xFzDjncV6O0PgA==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 1306)
+
+
+  
+SyntaxError (/home/pham/Desktop/chapter9/app/models/user.rb:33: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...est: User.digest remember_token
+...                 ^~~~~~~~~~~~~~):
+  
+app/models/user.rb:33: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/models/user.rb:33: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/models/user.rb:33: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/" for ::1 at 2019-10-18 09:26:56 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2093)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 329)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 313)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 17805)
+
+
+Started GET "/vi/login" for ::1 at 2019-10-18 09:26:58 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1059)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 273)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 16776)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 09:27:05 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"XhG5LlDFD22i1mNrGgoW+x4/WdtP1nI1IZpIy+RwO9eo1EffhpQzSwDHDkcsr/Au7MeEFXmjb1lY+VTH51hklQ==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (42.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1063)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 283)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 271)
+Completed 200 OK in 473ms (Views: 15.7ms | ActiveRecord: 45.9ms | Allocations: 23614)
+
+
+Started POST "/vi/login" for ::1 at 2019-10-18 09:27:17 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"x9nUjy9QfsxyMjDGmsu+1kRrPkOF/LaiYF2x10gZ0sJh0kyWatoB4J+opsU+Iw98leDLoJLwfMo3ZSvZorIqvw==", "session"=>{"email"=>"linh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Đăng nhập", "locale"=>"vi"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:33:in `remember'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `remember'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:33:in `remember'
+Redirected to http://localhost:3000/vi/users/7
+Completed 302 Found in 703ms (ActiveRecord: 0.8ms | Allocations: 5880)
+
+
+Started GET "/vi/users/7" for ::1 at 2019-10-18 09:27:18 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"vi", "id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 47)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 1090)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 273)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.3ms | Allocations: 17271)
+
+
+Started GET "/vi" for ::1 at 2019-10-18 09:27:21 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1634)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 1034)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 271)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.1ms | Allocations: 17861)
+
+
+Started GET "/vi/help" for ::1 at 2019-10-18 09:27:22 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 24.7ms | Allocations: 681)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 4.7ms | Allocations: 1038)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 273)
+Completed 200 OK in 47ms (Views: 43.5ms | ActiveRecord: 0.2ms | Allocations: 17174)
+
+
+Started GET "/vi/help" for ::1 at 2019-10-18 09:27:23 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 1.6ms | Allocations: 392)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 1032)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 271)
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 0.1ms | Allocations: 16735)
+
+
+Started GET "/vi/help" for ::1 at 2019-10-18 09:27:24 +0700
+Processing by StaticPagesController#help as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 4.3ms | Allocations: 392)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 6)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 9.8ms | Allocations: 1032)
+  Rendered layouts/_footer.html.erb (Duration: 2.9ms | Allocations: 271)
+Completed 200 OK in 108ms (Views: 99.6ms | ActiveRecord: 1.0ms | Allocations: 16737)
+
+
+Started DELETE "/vi/logout" for ::1 at 2019-10-18 09:27:26 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WJDLYAQ0tXy/bJgplu+OQQlAbQBKFvxiMQVDXIMSig7+m1N5Qb7KUFL2DioyBz/r2MuY410aNgpmPdlSablycw==", "locale"=>"vi"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:14:in `current_user'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:43:in `forget'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "linh@gmail.com"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:43:in `forget'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:43:in `forget'
+Redirected to http://localhost:3000/vi
+Completed 302 Found in 19ms (ActiveRecord: 1.3ms | Allocations: 5325)
+
+
+Started GET "/vi" for ::1 at 2019-10-18 09:27:26 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1635)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 285)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 271)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 17083)
+
+

@@ -62,7 +62,6 @@ vi:
     create:
       welcome: Chào mừng bạn đến với Ứng dụng mẫu!
       fail: Thông tin không hợp lệ
-      invalid: Email hoặc mật khẩu không hợp lệ
     notfound: Không tìm thấy người dùng này
   sessions:
     new:
@@ -71,8 +70,11 @@ vi:
       login: Đăng nhập
       email: Email
       password: Mật khẩu
+      remember_me: remember_me
+      remember: Nhớ tài khoản tôi trong máy tính này
       new_user: Người dùng mới?
       sign_up_now: Đăng ký
+  invalid: Email hoặc mật khẩu không hợp lệ
   error:
     one: 1 lỗi
     other: "%{count} lỗi"

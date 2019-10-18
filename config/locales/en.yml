@@ -62,7 +62,6 @@ en:
     create:
       welcome: Welcome to the Sample App!
       fail: Invalid information
-      invalid: Invalid email/password combination
     notfound: User doesn't exist
   sessions:
     new:
@@ -71,8 +70,11 @@ en:
       login: Log in
       email: Email
       password: Password
+      remember_me: remember_me
+      remember: Remember me on this computer
       new_user: New user?
       sign_up_now: Sign up now!
+  invalid: Invalid email/password combination
   error:
     one: 1 error
     other: "%{count} errors"
