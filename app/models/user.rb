@@ -1,6 +1,5 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = Settings.regex_mail
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
 
   attr_accessor :remember_token
   before_save{email.downcase!}
@@ -12,6 +11,9 @@ class User < ApplicationRecord
   validates :password, presence: true, length: {minimum: Settings.min6}
 
   has_secure_password
+
+  validates :password, presence: true, length: {minimum: Settings.min6},
+    allow_nil: true
 
   class << self
     def digest string

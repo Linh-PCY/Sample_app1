@@ -62,7 +62,34 @@ vi:
     create:
       welcome: Chào mừng bạn đến với Ứng dụng mẫu!
       fail: Thông tin không hợp lệ
+    update:
+      profile: Hồ sơ cá nhân đã cập nhật
+      error: Lỗi
+    logged_in_user:
+      please: Vui lòng đăng nhập lại
     notfound: Không tìm thấy người dùng này
+    edit:
+      edit_user: Chỉnh sửa người dùng
+      update: Cập nhật hồ sơ
+      name: Họ và tên
+      email: Email
+      password: Mật khẩu
+      confirmation: Xác nhận mật khẩu
+      save_changes: Lưu thay đổi
+      change: Thay đổi
+    form:
+      name: Họ và tên
+      email: Email
+      password: Mật khẩu
+      confirmation: Xác nhận mật khẩu
+    index:
+      all_users: Tất cả người dùng
+    user:
+      delete: Xóa
+      sure: Bạn chắc chắn?
+    destroy:
+      delete: Xóa người dùng
+      delete_error: Xóa không thành công
   sessions:
     new:
       en: Tiếng Anh
