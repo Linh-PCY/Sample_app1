@@ -15,5 +15,6 @@ max255: 255
 min6: 6
 size: 80
 s50: 50
+one: 1
 regex_mail: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
 gravatar_emails: http://gravatar.com/emails
