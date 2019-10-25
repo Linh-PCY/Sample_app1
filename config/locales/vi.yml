@@ -60,7 +60,7 @@ vi:
       confirmation: Xác nhận mật khẩu
       create_my_account: Tạo tài khoản
     create:
-      welcome: Chào mừng bạn đến với Ứng dụng mẫu!
+      please: Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn.
       fail: Thông tin không hợp lệ
     update:
       profile: Hồ sơ cá nhân đã cập nhật
@@ -106,3 +106,22 @@ vi:
     one: 1 lỗi
     other: "%{count} lỗi"
   the_form_contains: Biểu mẫu có chứa
+  user_mailer:
+    account_activation:
+      hi_hi: Xin chào
+      welcome_click: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết
+        dưới đây để kích hoạt tài khoản của bạn:"
+      sample_app: Ứng dụng mẫu
+      hi: Xin chào
+      welcome_click_link: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết
+        dưới đây để kích hoạt tài khoản của bạn:"
+      activate: Kích hoạt
+  account_activated: Tài khoản được kích hoạt!
+  invalid_activation_link: Liên kết kích hoạt không hợp lệ
+  account_not_activated: Tài khoản chưa được kích hoạt. Kiểm tra email của bạn cho các liên kết kích hoạt.
+  mailers:
+    account_activation: Kích hoạt tài khoản
+    hi: Xin chào
+  user_mailer:
+    user_password_reset: User#password_reset
+    find_me_in: Tìm tôi trong

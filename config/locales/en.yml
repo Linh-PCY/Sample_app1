@@ -60,7 +60,7 @@ en:
       confirmation: Confirmation
       create_my_account: Create my account
     create:
-      welcome: Welcome to the Sample App!
+      please: Please check your email to activate your account.
       fail: Invalid information
     update:
       profile: Profile updated
@@ -106,3 +106,21 @@ en:
     one: 1 error
     other: "%{count} errors"
   the_form_contains: The form contains
+  user_mailer:
+    account_activation:
+      hi_hi: Hi
+      welcome_click: "Welcome to the Sample App! Click on the link below
+        to activate your account:"
+      sample_app: Sample App
+      hi: Hi
+      welcome_click_link: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: Ativate
+  account_activated: Account activated!
+  invalid_activation_link: Invalid activation link
+  account_not_activated: Account not activated. Check your email for the activation link.
+  mailers:
+    account_activation: Account activation
+    hi: Hi
+  user_mailer:
+    user_password_reset: User#password_reset
+    find_me_in: find me in
