@@ -97,6 +97,7 @@ vi:
       login: Đăng nhập
       email: Email
       password: Mật khẩu
+      forgot_password: (Quên mật khẩu)
       remember_me: remember_me
       remember: Nhớ tài khoản tôi trong máy tính này
       new_user: Người dùng mới?
@@ -119,9 +120,40 @@ vi:
   account_activated: Tài khoản được kích hoạt!
   invalid_activation_link: Liên kết kích hoạt không hợp lệ
   account_not_activated: Tài khoản chưa được kích hoạt. Kiểm tra email của bạn cho các liên kết kích hoạt.
+  email_sent: Email được gửi với hướng dẫn đặt lại mật khẩu
+  email_address: Không tìm thấy địa chỉ email
+  not_found_email: Không tìm thấy email
+  password_reset_invalid: Đặt lại mật khẩu không hợp lệ
+  password_expired: Đặt lại mật khẩu đã hết hạn
   mailers:
     account_activation: Kích hoạt tài khoản
-    hi: Xin chào
+    password_reset: Đặt lại mật khẩu
   user_mailer:
     user_password_reset: User#password_reset
     find_me_in: Tìm tôi trong
+    password_reset: Đặt lại mật khẩu
+    reset_password_link: "Để thiết lập lại mật khẩu của bạn, nhấp vào liên kết dưới đây:"
+    reset_password: Đặt lại mật khẩu
+    link_two: Liên kết này sẽ hết hạn trong hai giờ.
+    not_request_your_password: Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và
+      mật khẩu của bạn sẽ được giữ nguyên.
+  password_resets:
+    new:
+      email: Email
+      forgotpassword: Quên mật khẩu
+      submit: Gửi đi
+    edit:
+      title: "Đặt lại mật khẩu"
+      password: "Mật khẩu"
+      password_confirm: "Nhập lại mật khẩu"
+      submit_btn: "Lưu"
+      reset_password: Đặt lại mật khẩu
+      update_password: Cập nhật mật khẩu
+    update:
+      empty_password_error: "không để trống"
+      password_reset_done: "Thay đổi thành công"
+  password_reset_invalid: Đặt lại mật khẩu không hợp lệ
+  not_found_email: Vui lòng nhập mật khẩu
+  password_reset_expired: Đặt lại mật khẩu đã hết hạn
+  password_reset_message: Tin nhắn đặt lại mật khẩu
+  password_reset: Thay đổi mật khẩu
