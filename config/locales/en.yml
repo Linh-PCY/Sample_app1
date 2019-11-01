@@ -97,6 +97,7 @@ en:
       login: Log in
       email: Email
       password: Password
+      forgot_password: (forgot password)
       remember_me: remember_me
       remember: Remember me on this computer
       new_user: New user?
@@ -118,9 +119,40 @@ en:
   account_activated: Account activated!
   invalid_activation_link: Invalid activation link
   account_not_activated: Account not activated. Check your email for the activation link.
+  email_sent: Email sent with password reset instructions
+  email_address: Email address not found
+  not_found_email: Not found email
+  password_reset_invalid: Password reset invalid
+  password_expired: Password Reset Expired
   mailers:
     account_activation: Account activation
-    hi: Hi
+    password_reset: Password seset
   user_mailer:
     user_password_reset: User#password_reset
     find_me_in: find me in
+    password_reset: Password reset
+    reset_password_link: "To reset your password click the link below:"
+    reset_password: Reset password
+    link_two: This link will expire in two hours.
+    not_request_your_password: If you did not request your password to be reset, please ignore this email and
+      your password will stay as it is.
+  password_resets:
+    new:
+      email: Email
+      forgotpassword: Forgot password
+      submit: Submit
+    edit:
+      title: "Password reset"
+      password: "Password"
+      password_confirm: "Password confirmation"
+      submit_btn: "Update password"
+      reset_password: Reset password
+      update_password: Update password
+    update:
+      empty_password_error: Empty password error
+      password_reset_done: "Successfull"
+  password_reset_invalid: Password reset invalid
+  not_found_email: Not found email
+  password_reset_expired: Password Reset Expired
+  password_reset_message: Password Reset Messager
+  password_reset: Change password
